@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://masato-nike.github.io/blog/2017/10/07/fyuse/</loc>
+<lastmod>2017-10-07T15:31:13+09:00</lastmod>
+</url>
+<url>
 <loc>http://masato-nike.github.io/blog/2017/10/07/hello/</loc>
 <lastmod>2017-10-07T08:23:00+09:00</lastmod>
 </url>
@@ -47,6 +51,12 @@
 </url>
 <url>
 <loc>http://masato-nike.github.io/blog/categories/sakuraintanetuto/</loc>
+</url>
+<url>
+<loc>http://masato-nike.github.io/blog/categories/shi-shi/</loc>
+</url>
+<url>
+<loc>http://masato-nike.github.io/blog/categories/sumahoapuri/</loc>
 </url>
 <url>
 <loc>http://masato-nike.github.io/syntaxhighlighter/test.html</loc>

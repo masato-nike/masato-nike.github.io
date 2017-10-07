@@ -4,7 +4,7 @@
   <title><![CDATA[ないきまさとの部屋]]></title>
   <link href="http://masato-nike.github.io/atom.xml" rel="self"/>
   <link href="http://masato-nike.github.io/"/>
-  <updated>2017-10-07T14:28:18+09:00</updated>
+  <updated>2017-10-07T16:47:06+09:00</updated>
   <id>http://masato-nike.github.io/</id>
   <author>
     <name><![CDATA[Masato Nike]]></name>
@@ -12,6 +12,34 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Fyuseというアプリ]]></title>
+    <link href="http://masato-nike.github.io/blog/2017/10/07/fyuse/"/>
+    <updated>2017-10-07T15:31:13+09:00</updated>
+    <id>http://masato-nike.github.io/blog/2017/10/07/fyuse</id>
+    <content type="html"><![CDATA[<p>仕事で、ホームページ上で商品紹介をするにあたって、商品の全体画像が欲しくて、いい感じに撮影できないか、あれこれググっていたら、『Fyuse』なるアプリを発見した！<br />
+なにはともあれ、『Fyuse』で撮影した写真を、マウスを動かしながら見てほしい。</p>
+
+<div id="fyu_3e9camgo2k" class="fyu_container fyu_vertical"></div>
+
+
+<script src="https://fyu.se/embed?v=3.0"></script>
+
+
+<script>FYU.add("3e9camgo2k", "fyu_3e9camgo2k");</script>
+
+
+
+
+<!--more-->
+
+
+<p>これはスマートフォンアプリなので、以下のサイトからダウンロードしてほしい。</p>
+
+<p><a href="https://www.fyu.se/" title="Fyuse公式サイト">Fyuse公式サイト</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[久しぶりです!Octopress]]></title>

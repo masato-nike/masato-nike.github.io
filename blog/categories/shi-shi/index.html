@@ -5,14 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>さくらインターネットでサーバ構築② - ないきまさとの部屋</title>
+  <title>Category: 仕事 - ないきまさとの部屋</title>
   <meta name="author" content="Masato Nike">
 
   
-  <meta name="description" content="今回はDNSサーバの構築について書こうと思いますが、
-タイトルには『さくらインターネット』と書いていますが、
-今回、さくらインターネットでドメインを取得しなかったため、
-さくらインターネットはあまり関係ないです。 1. パッケージのインストール DNSサーバを立ち上げるために必要なパッケージ( &hellip;">
+  <meta name="description" content="Category: 仕事">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -21,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://masato-nike.github.io/blog/2016/06/21/buildserverdns/">
+  <link rel="canonical" href="http://masato-nike.github.io/blog/categories/shi-shi/">
 
 <link rel="apple-touch-icon" sizes="57x57" href="/ico/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/ico/apple-icon-60x60.png">
@@ -109,111 +106,35 @@
   <div id="main">
     <div id="content">
       <div>
-<article class="hentry" role="article">
+<article role="article">
   
   <header>
-    
-      <h1 class="entry-title">さくらインターネットでサーバ構築②</h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2016-06-21T05:38:10+09:00'><span class='date'>2016年06月21日</span> <span class='time'>05:38</span></time>
-        
-      </p>
+    <h1 class="entry-title">Category: 仕事</h1>
     
   </header>
+  
+  <div id="blog-archives" class="category">
 
 
-<div class="entry-content"><p>今回はDNSサーバの構築について書こうと思いますが、
-タイトルには『さくらインターネット』と書いていますが、
-今回、さくらインターネットでドメインを取得しなかったため、
-さくらインターネットはあまり関係ないです。</p>
 
-<!--more-->
+  
+  <h2>2017</h2>
 
+<article>
+  
+<h1><a href="/blog/2017/10/07/fyuse/">Fyuseというアプリ</a></h1>
+<time datetime="2017-10-07T15:31:13+09:00" pubdate><span class='month'>Oct</span> <span class='day'>07</span> <span class='year'>2017</span></time>
 
-<h2>1. パッケージのインストール</h2>
-
-<p>DNSサーバを立ち上げるために必要なパッケージ(BIND)をインストールします。</p>
-
-<pre class="brush: bash;">
-yum -y install bind bind-chroot bind-utils
-</pre>
+<footer>
+  <span class="categories">posted in <a class='category' href='/blog/categories/blog/'>blog</a>, <a class='category' href='/blog/categories/sumahoapuri/'>スマホアプリ</a>, <a class='category' href='/blog/categories/shi-shi/'>仕事</a></span>
+</footer>
 
 
-<p>bind-chrootはbindを保護するchroot機能を組み込むためにインストールします。<br/>
-bind-utilsはのちの手順でdigコマンドを実行するためにインストールします。</p>
-
-<h2>2. 権威DNSの設定</h2>
-
-<p>権威DNSサーバとは（以下、コピペ）、
-『あるドメイン名の情報を記録・管理する正当な権限を有し、
-そのドメインの情報についての外部からの問い合わせに応答するDNSサーバ』のこと。<br/>
-で、設定ファイルであるnamed.confやゾーンファイルの設定をするのですが、
-以下のサイトがわかりやすく書いてあったので、ここではサイトを紹介するだけに留めておきます。</p>
-
-<p><a href="http://www.atmarkit.co.jp/ait/articles/1502/10/news010.html" title="権威DNSサーバーにおける設定の基本を教えてください（BIND編）">権威DNSサーバーにおける設定の基本を教えてください（BIND編）</a></p>
-
-<h2>3. iptablesの設定</h2>
-
-<p>DNSサーバの通知を有効にするために、以下のようにコマンドを入力し、ポートを解放します。</p>
-
-<pre class="brush: bash;">
-iptables -A INPUT -p tcp -m tcp --dport 53 -j ACCEPT
-iptables -A INPUT -p udp -m udp --dport 53 -j ACCEPT
-service iptables save
-</pre>
+</article>
 
 </div>
 
-
-  <footer>
-    <p class="meta">
-      
   
-
-<span class="byline author vcard">Posted by <span class="fn">Masato Nike</span></span>
-
-      
-
-
-
-
-<time class='entry-date' datetime='2016-06-21T05:38:10+09:00'><span class='date'>2016年06月21日</span> <span class='time'>05:38</span></time>
-      
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/sakuraintanetuto/'>さくらインターネット</a>, <a class='category' href='/blog/categories/sabagou-zhu/'>サーバ構築</a>
-  
-</span>
-
-
-    </p>
-    
-      <div class="sharing">
-  
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://masato-nike.github.io/blog/2016/06/21/buildserverdns/" data-via="" data-counturl="http://masato-nike.github.io/blog/2016/06/21/buildserverdns/" >Tweet</a>
-  
-  
-  
-</div>
-
-    
-    <p class="meta">
-      
-        <a class="basic-alignment left" href="/blog/2016/06/16/octopress/" title="Previous Post: Octopressで表を挿入する">&laquo; Octopressで表を挿入する</a>
-      
-      
-        <a class="basic-alignment right" href="/blog/2017/10/07/hello/" title="Next Post: 久しぶりです!Octopress">久しぶりです!Octopress &raquo;</a>
-      
-    </p>
-  </footer>
 </article>
 
 </div>
