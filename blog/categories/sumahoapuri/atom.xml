@@ -4,7 +4,7 @@
   <title><![CDATA[Category: スマホアプリ | ないきまさとの部屋]]></title>
   <link href="http://masato-nike.github.io/blog/categories/sumahoapuri/atom.xml" rel="self"/>
   <link href="http://masato-nike.github.io/"/>
-  <updated>2017-10-07T17:12:21+09:00</updated>
+  <updated>2017-10-09T22:22:36+09:00</updated>
   <id>http://masato-nike.github.io/</id>
   <author>
     <name><![CDATA[Masato Nike]]></name>
@@ -21,7 +21,7 @@
     <content type="html"><![CDATA[<p>仕事で、ホームページ上で商品紹介をするにあたって、商品の全体画像が欲しくて、いい感じに撮影できないか、あれこれググっていたら、『Fyuse』なるアプリを発見した！<br />
 なにはともあれ、『Fyuse』で撮影した写真を、マウスを動かしながら見てほしい。</p>
 
-<div id="fyu_3e9camgo2k" class="fyu_container fyu_vertical"></div>
+<div id="fyu_3e9camgo2k" class="fyu_container fyu_vertical" style="margin:auto"></div>
 
 
 <script src="https://fyu.se/embed?v=3.0"></script>
