@@ -4,7 +4,7 @@
   <title><![CDATA[Category: 仕事 | ないきまさとの部屋]]></title>
   <link href="http://masato-nike.github.io/blog/categories/shi-shi/atom.xml" rel="self"/>
   <link href="http://masato-nike.github.io/"/>
-  <updated>2017-10-09T22:22:36+09:00</updated>
+  <updated>2017-10-11T20:30:05+09:00</updated>
   <id>http://masato-nike.github.io/</id>
   <author>
     <name><![CDATA[Masato Nike]]></name>
@@ -12,6 +12,148 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[FacebookのRSSを取得する（永久ページアクセストークンの取得）]]></title>
+    <link href="http://masato-nike.github.io/blog/2017/10/11/facebookfeed/"/>
+    <updated>2017-10-11T06:35:53+09:00</updated>
+    <id>http://masato-nike.github.io/blog/2017/10/11/facebookfeed</id>
+    <content type="html"><![CDATA[<p>FacebookのRSSを取得し、自分のホームページのTOPICSにしたいなぁと考えた次第です。<br />
+FacebookのRSSを取得するには、ページアクセストークンなるものが必要なのですが、通常の方法だと、有効期限が1時間以内のアクセストークンが取得できません。<br />
+それだといくらRSSを取得できても、ホームページのTOPICSに使用するには有効期限が短すぎます。
+そこで、永久的なアクセストークンを取得できないかと、いろいろぐぐってみたわけです。<br /></p>
+
+<!--more-->
+
+
+<p>以下に私が調査した方法（2017年10月11日時点）を記しておきます。</p>
+
+<h2>　1. （事前準備）アプリ登録およびアプリ情報の取得</h2>
+
+<p>Facebookにログインし、アプリ管理をクリックします。</p>
+
+<p><img src="/images/blog/2017/10/11/facebookfeed_001.jpg" title="&lsquo;アプリ管理&rsquo; &lsquo;facebook_feed_001&rsquo;" ></p>
+
+<p>[新しいアプリを作成]ボタンをクリックしてください。</p>
+
+<p><img src="/images/blog/2017/10/11/facebookfeed_002.jpg" title="&lsquo;新しいアプリを作成&rsquo; &lsquo;facebook_feed_002&rsquo;" ></p>
+
+<p>表示されたダイアログで、アプリの表示名を入力します。</p>
+
+<p><img src="/images/blog/2017/10/11/facebookfeed_003.jpg" title="&lsquo;アプリの表示名&rsquo; &lsquo;facebook_feed_003&rsquo;" ></p>
+
+<p>セキュリティチェックを行い、送信ボタンをクリックします。
+これでアプリが作成されるはずです。</p>
+
+<p>[設定]―[ベーシック]を表示し、『アプリID』と『app secret』をメモしておいてください。</p>
+
+<p><img src="/images/blog/2017/10/11/facebookfeed_004.jpg" title="&lsquo;アプリ情報&rsquo; &lsquo;facebook_feed_004&rsquo;" ></p>
+
+<h2>2. ユーザアクセストークンの取得</h2>
+
+<p>グラフAPIエクスプローラ <a href="https://developers.facebook.com/tools/explorer/145634995501895/">https://developers.facebook.com/tools/explorer/145634995501895/</a> にアクセスします。</p>
+
+<p>アプリにて、作成したアプリを選択します。</p>
+
+<p><img src="/images/blog/2017/10/11/facebookfeed_005.jpg" title="&lsquo;アプリ選択&rsquo; &lsquo;facebook_feed_005&rsquo;" ></p>
+
+<p>トークンを取得かから、[ユーザアクセストークンを取得]を選択します。</p>
+
+<p><img src="/images/blog/2017/10/11/facebookfeed_006.jpg" title="&lsquo;ユーザアクセストークンを選択&rsquo; &lsquo;facebook_feed_006&rsquo;" ></p>
+
+<p>manage_pages　にチェックを入れ、アクセストークンを取得します。</p>
+
+<p><img src="/images/blog/2017/10/11/facebookfeed_007.jpg" title="&lsquo;権限付与&rsquo; &lsquo;facebook_feed_007&rsquo;" ></p>
+
+<p>Facebookでログインダイアログが表示されるので、ログインしてください。</p>
+
+<p><img src="/images/blog/2017/10/11/facebookfeed_008.jpg" title="&lsquo;ログイン認証&rsquo; &lsquo;facebook_feed_008&rsquo;" ></p>
+
+<p>ログインしたダイアログにアクセストークンがコールバックされるので、メモしてください（UUU1H）。</p>
+
+<p><img src="/images/blog/2017/10/11/facebookfeed_009.jpg" title="&lsquo;ユーザアクセストークン&rsquo; &lsquo;facebook_feed_009&rsquo;" ></p>
+
+<p><code>
+<a href="https://developers.facebook.com/tools/explorer/callback#access_token=UUU1H&amp;expires_in=5762">https://developers.facebook.com/tools/explorer/callback#access_token=UUU1H&amp;expires_in=5762</a>
+</code></p>
+
+<h2>3. ユーザアクセストークンの延長</h2>
+
+<p>[ツール＆サポート]をクリックしてください。</p>
+
+<p><img src="/images/blog/2017/10/11/facebookfeed_010.jpg" title="&lsquo;ツール＆サポート&rsquo; &lsquo;facebook_feed_010&rsquo;" ></p>
+
+<p>アクセストークンツールをクリックしてくだい。</p>
+
+<p><img src="/images/blog/2017/10/11/facebookfeed_011.jpg" title="&lsquo;アクセストークンツール&rsquo; &lsquo;facebook_feed_011&rsquo;" ></p>
+
+<p>[User Token]のデバッグを実施します。</p>
+
+<p><img src="/images/blog/2017/10/11/facebookfeed_012.jpg" title="&lsquo;User Token&rsquo; &lsquo;facebook_feed_012&rsquo;" ></p>
+
+<p>アクセストークンツールにて、アクセストークンUUU1Hをコピペし、デバッグを実施してください。</p>
+
+<p><img src="/images/blog/2017/10/11/facebookfeed_013.jpg" title="&lsquo;ユーザアクセストークン&rsquo; &lsquo;facebook_feed_013&rsquo;" ></p>
+
+<p>アクセストークンを延長してください。</p>
+
+<p><img src="/images/blog/2017/10/11/facebookfeed_014.jpg" title="&lsquo;ユーザアクセストークンの延長&rsquo; &lsquo;facebook_feed_014&rsquo;" ></p>
+
+<p>表示されたアクセストークンをメモしてください（UUU2M）。</p>
+
+<h2>4. 無期限ユーザアクセストークンの取得</h2>
+
+<p><code>
+<a href="https://graph.facebook.com/oauth/access_token?grant_type=fb_exchange_token&amp;client_id=">https://graph.facebook.com/oauth/access_token?grant_type=fb_exchange_token&amp;client_id=</a>&lt;アプリID>&amp;client_secret=<app secret>&amp;fb_exchange_token=UUU2M
+</code></p>
+
+<p>にアクセスしてください。
+JSONファイルがダウンロードもしくは表示されるので、保存してください。</p>
+
+<p>{&ldquo;access_token&rdquo;:&ldquo;UUU8&rdquo;,&ldquo;token_type&rdquo;:&ldquo;bearer&rdquo;,&ldquo;expires_in&rdquo;:5183824}</p>
+
+<h2>5. 無期限ページアクセストークンの取得</h2>
+
+<p><code>
+<a href="https://graph.facebook.com/me/accounts?access_token=UUU8">https://graph.facebook.com/me/accounts?access_token=UUU8</a>
+</code></p>
+
+<p>にアクセスしてください。
+JSONファイルがダウンロードもしくは表示されるので、保存してください。</p>
+
+<p><code>
+{
+   &ldquo;data&rdquo;: [
+      {
+         &ldquo;access_token&rdquo;: &ldquo;PPP8&rdquo;,
+         &ldquo;category&rdquo;: &ldquo;Community&rdquo;,
+         &ldquo;name&rdquo;: &ldquo;hogehoge&rdquo;,
+         &ldquo;id&rdquo;: &ldquo;pegepge&rdquo;,
+         &ldquo;perms&rdquo;: [
+            &ldquo;ADMINISTER&rdquo;,
+            &ldquo;EDIT_PROFILE&rdquo;,
+            &ldquo;CREATE_CONTENT&rdquo;,
+            &ldquo;MODERATE_CONTENT&rdquo;,
+            &ldquo;CREATE_ADS&rdquo;,
+            &ldquo;BASIC_ADMIN&rdquo;
+         ]
+      }
+   ],
+   &ldquo;paging&rdquo;: {
+      &ldquo;cursors&rdquo;: {
+         &ldquo;before&rdquo;: &ldquo;guhaguha&rdquo;,
+         &ldquo;after&rdquo;: &ldquo;haguhagu&rdquo;
+      }
+   }
+}
+</code></p>
+
+<p>アクセストークンデバッガーにて、上記アクセストークン（PPP8）を入力し、デバッグを実行してください。
+有効期限が受け取らないになっていることを確認してください。</p>
+
+<p><img src="/images/blog/2017/10/11/facebookfeed_015.jpg" title="&lsquo;無期限ページアクセストークン&rsquo; &lsquo;facebook_feed_015&rsquo;" ></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Fyuseというアプリ]]></title>
