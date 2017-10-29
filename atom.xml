@@ -4,7 +4,7 @@
   <title><![CDATA[ないきまさとの部屋]]></title>
   <link href="http://masato-nike.github.io/atom.xml" rel="self"/>
   <link href="http://masato-nike.github.io/"/>
-  <updated>2017-10-26T04:07:48+09:00</updated>
+  <updated>2017-10-29T17:04:45+09:00</updated>
   <id>http://masato-nike.github.io/</id>
   <author>
     <name><![CDATA[Masato Nike]]></name>
@@ -12,6 +12,56 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Instagramにパソコンから画像をアップする方法（Firefox篇）]]></title>
+    <link href="http://masato-nike.github.io/blog/2017/10/29/instagram-pc/"/>
+    <updated>2017-10-29T16:25:20+09:00</updated>
+    <id>http://masato-nike.github.io/blog/2017/10/29/instagram-pc</id>
+    <content type="html"><![CDATA[<p>Instagramにパソコンから画像をアップしたいと思ったことはありませんか？<br />
+Instagramでは通常はパソコンかあらはアップできないのですが、ブラウザを偽装（？）することにより、パソコンから画像をアップすることができるようになります。</p>
+
+<!--more-->
+
+
+<p>今回はその方法をご紹介します。<br />
+Firefox篇とうたっていますが、その他にもGoogle ChromeやSafariからもできるようです。</p>
+
+<p>(1) Firefoxで、Instagramにアクセスします。</p>
+
+<p><img src="http://masato-nike.github.io/images/blog/2017/10/29/Instagram_001.jpg" title="インスタグラムにアクセス" alt="Instagram_001"></p>
+
+<p>(2) Firefoxのメニューから[開発ツール]を選択します。</p>
+
+<p><img src="http://masato-nike.github.io/images/blog/2017/10/29/Instagram_002.jpg" title="開発ツール" alt="Instagram_002"></p>
+
+<p>(3) [レスポンシブデザイン]をクリックします。</p>
+
+<p><img src="http://masato-nike.github.io/images/blog/2017/10/29/Instagram_003.jpg" title="レスポンシブデザイン" alt="Instagram_003"></p>
+
+<p>(4) 端末を選択します。</p>
+
+<p><img src="http://masato-nike.github.io/images/blog/2017/10/29/Instagram_004.jpg" title="端末を選択" alt="Instagram_004"></p>
+
+<p><img src="http://masato-nike.github.io/images/blog/2017/10/29/Instagram_005.jpg" title="iPhone6s" alt="Instagram_005"></p>
+
+<p>(5) Instagramの画面がレスポンシブデザインになったので、画面上部のカメラをクリックします。</p>
+
+<p><img src="http://masato-nike.github.io/images/blog/2017/10/29/Instagram_006.jpg" title="カメラアイコン" alt="Instagram_006"></p>
+
+<p>(6) ファイル選択ダイアログが表示されるので、アップロードしたい画像を選択します。<br />
+　　　※複数枚の画像をアップすることはできないようです。<br />
+　　　※動画はアップできないようです。<br /></p>
+
+<p><img src="http://masato-nike.github.io/images/blog/2017/10/29/Instagram_007.jpg" title="画像ファイルを選択" alt="Instagram_007"></p>
+
+<p><img src="http://masato-nike.github.io/images/blog/2017/10/29/Instagram_008.jpg" title="画像のアップ" alt="Instagram_008"></p>
+
+<p>(7) あとはスマホからアップするときと同じように、キャプションをつけて、[シェアする]だけです。</p>
+
+<p><img src="http://masato-nike.github.io/images/blog/2017/10/29/Instagram_009.jpg" title="シェア" alt="Instagram_009"></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[FacebookのRSSを取得する（永久ページアクセストークンの取得）]]></title>

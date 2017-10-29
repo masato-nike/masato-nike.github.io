@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Octopress | ないきまさとの部屋]]></title>
   <link href="http://masato-nike.github.io/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://masato-nike.github.io/"/>
-  <updated>2017-10-26T04:08:23+09:00</updated>
+  <updated>2017-10-29T17:04:45+09:00</updated>
   <id>http://masato-nike.github.io/</id>
   <author>
     <name><![CDATA[Masato Nike]]></name>
@@ -78,7 +78,7 @@
 
 <p>デフォルトの表では以下のように表示されます。</p>
 
-<p>{% img /images/blog/2016/06/16/octopress_table.jpg &lsquo;Octopressでの表&rsquo; &lsquo;octopress_talbe&rsquo; %}</p>
+<p><img src="/images/blog/2016/06/16/octopress_table.jpg" title="&lsquo;Octopressでの表&rsquo; &lsquo;octopress_talbe&rsquo;" ></p>
 
 <p>これでは罫線も背景色も何もなく味気ないので、"/stylesheets/table.css"というファイルを用意し、以下のようにします。</p>
 
@@ -127,7 +127,7 @@
 <p>そして、"source/_includes/head.html"に以下の一行を加えます。</p>
 
 <pre class="brush: xhtml;">
-<link href="{{ root_url }}/stylesheets/table.css" rel="stylesheet" type="text/css">
+<link href="/stylesheets/table.css" rel="stylesheet" type="text/css">
 </pre>
 
 
