@@ -9,7 +9,7 @@ enableRobotsTXT = true
 DefaultContentLanguage = "ja"
 
 # Enable / Disable Google Analytics statistics for your site
-googleAnalytics = ""
+googleAnalytics = "UA-7936305-1"
 
 # Enable / Disable comments on the articles via Disqus.
 disqusShortname = "bilberry-hugo-theme"
@@ -31,8 +31,8 @@ pygmentsCodeFences = true
 
   # Description and meta data for the search engines
   author = "Masato Nike"
-  description = "Bilberry Premium Theme for Hugo."
-  keywords = "blog,personal,responsive,search,font awesome,pages,posts,multilingual,highlight.js,syntax highlighting,premium,shortcuts"
+  description = "ないきまさとの部屋のブログ"
+  keywords = "blog, ブログ, Octopress, Hugo, サーバ構築"
 
   # How many articles should be displayed at once?
   paginate = 7
@@ -41,7 +41,7 @@ pygmentsCodeFences = true
   enable_mathjax    = false
 
   # Enable / Disable algolia search
-  algolia_search    = true
+  algolia_search    = false
   algolia_appId     = "Y2C4RWMPXW"
   algolia_apiKey    = "50ea7f8c41c0ad233926e0be2b769ed1"
   algolia_indexName = "default-content"
@@ -59,13 +59,13 @@ pygmentsCodeFences = true
     subtitle = "ないきまさとのブログ"
 
     # if you want to use gravatar for the header image
-    gravatarEMail = "code@lednerb.de"
+    gravatarEMail = "masato_nike@momo-mail.com"
 
     # set an path to the image file you want to use | overwrites gravatar
     customImage = "/images/MasatoNike.jpg"
 
     # define the icon you want to use for the overlay for the customImage or gravatar.
-    overlayIcon = "/images/MasatoNike.jpg"
+    overlayIcon = "/images/MasatoNikeOff.jpg"
 
     # always display the top navigation (with pages and search) on non-mobile screens
     permanentTopNav = false
@@ -84,7 +84,7 @@ pygmentsCodeFences = true
     # pinOnlyToFirstPage = true
 
     # enable automatical localization of the article's PublishedDate with momentjs
-    enableMomentJs = true
+    enableMomentJs = false
 
     # customize the date format | only works if momentjs is disabled | only works with English month names
     # you can customize it with the options you find here:
@@ -115,7 +115,8 @@ pygmentsCodeFences = true
     # all icons https://fontawesome.com/icons?d=gallery&m=free
     # brand icons https://fontawesome.com/icons?d=gallery&s=brands&m=free
     socialMediaLinks = [
-      { link = "https://twitter.com/masato_nike", icon = "fab fa-twitter" }
+      { link = "https://twitter.com/masato_nike", icon = "fab fa-twitter" },
+      { link = "https://www.instagram.com/masato.nike/", icon = "fab fa-instagram" },
     ]
 
     # credits line configuration

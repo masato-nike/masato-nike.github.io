@@ -2,6 +2,7 @@
 layout: post
 title: "Octopressで表を挿入する"
 date: 2016-06-16 10:52:50 +0900
+author: Masato Nike
 comments: true
 tags: ['Octopress', 'Markdown']
 ---

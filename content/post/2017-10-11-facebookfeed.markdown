@@ -2,6 +2,7 @@
 layout: post
 title: "FacebookのRSSを取得する（永久ページアクセストークンの取得）"
 date: 2017-10-11 06:35:53 +0900
+author: Masato Nike
 comments: true
 tags: ['MakeupHomePage', 'Facebook']
 ---

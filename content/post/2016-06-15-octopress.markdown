@@ -2,6 +2,7 @@
 layout: post
 title: "Octopressを導入してみた"
 date: 2016-06-15 06:00:44 +0900
+author: Masato Nike
 comments: true
 tags: ['Octopress', 'CentOS']
 ---

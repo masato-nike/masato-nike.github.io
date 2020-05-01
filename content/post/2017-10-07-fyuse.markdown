@@ -2,6 +2,7 @@
 layout: post
 title: "Fyuseというアプリ"
 date: 2017-10-07 15:31:13 +0900
+author: Masato Nike
 comments: true
 tags: ['MakeupHomePage', 'SmartPhoneAppli']
 ---

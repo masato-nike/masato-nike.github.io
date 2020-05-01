@@ -2,6 +2,7 @@
 layout: post
 title: "Instagramにパソコンから画像をアップする方法（Firefox篇）"
 date: 2017-10-29 16:25:20 +0900
+author: Masato Nike
 comments: true
 tags: ['SNS', 'Instagram']
 ---

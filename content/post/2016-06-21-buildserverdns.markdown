@@ -2,6 +2,7 @@
 layout: post
 title: "さくらインターネットでサーバ構築②"
 date: 2016-06-21 05:38:10 +0900
+author: Masato Nike
 comments: true
 tags: ['Build Server', 'CentOS']
 ---
