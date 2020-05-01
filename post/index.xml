@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on ないきまさとの部屋</title>
+    <link>https://www.masato-nike.net/post/</link>
+    <description>Recent content in Posts on ないきまさとの部屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 01 May 2020 05:46:14 +0900</lastBuildDate>
+    
+	<atom:link href="https://www.masato-nike.net/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello!Hugo</title>
+      <link>https://www.masato-nike.net/post/2020-05-01-hello/</link>
+      <pubDate>Fri, 01 May 2020 05:46:14 +0900</pubDate>
+      
+      <guid>https://www.masato-nike.net/post/2020-05-01-hello/</guid>
+      <description>Hello!Hugo</description>
+    </item>
+    
+    <item>
+      <title>Instagramにパソコンから画像をアップする方法（Firefox篇）</title>
+      <link>https://www.masato-nike.net/post/2017-10-29-instagram-pc/</link>
+      <pubDate>Sun, 29 Oct 2017 16:25:20 +0900</pubDate>
+      
+      <guid>https://www.masato-nike.net/post/2017-10-29-instagram-pc/</guid>
+      <description>&lt;p&gt;Instagramにパソコンから画像をアップしたいと思ったことはありませんか？&lt;br /&gt;
+Instagramでは通常はパソコンかあらはアップできないのですが、ブラウザを偽装（？）することにより、パソコンから画像をアップすることができるようになります。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>FacebookのRSSを取得する（永久ページアクセストークンの取得）</title>
+      <link>https://www.masato-nike.net/post/2017-10-11-facebookfeed/</link>
+      <pubDate>Wed, 11 Oct 2017 06:35:53 +0900</pubDate>
+      
+      <guid>https://www.masato-nike.net/post/2017-10-11-facebookfeed/</guid>
+      <description>&lt;p&gt;FacebookのRSSを取得し、自分のホームページのTOPICSにしたいなぁと考えた次第です。&lt;br /&gt;
+FacebookのRSSを取得するには、ページアクセストークンなるものが必要なのですが、通常の方法だと、有効期限が1時間以内のアクセストークンが取得できません。&lt;br /&gt;
+それだといくらRSSを取得できても、ホームページのTOPICSに使用するには有効期限が短すぎます。
+そこで、永久的なアクセストークンを取得できないかと、いろいろぐぐってみたわけです。&lt;br /&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Fyuseというアプリ</title>
+      <link>https://www.masato-nike.net/post/2017-10-07-fyuse/</link>
+      <pubDate>Sat, 07 Oct 2017 15:31:13 +0900</pubDate>
+      
+      <guid>https://www.masato-nike.net/post/2017-10-07-fyuse/</guid>
+      <description>&lt;p&gt;仕事で、ホームページ上で商品紹介をするにあたって、商品の全体画像が欲しくて、いい感じに撮影できないか、あれこれググっていたら、『Fyuse』なるアプリを発見した！&lt;br /&gt;
+なにはともあれ、『Fyuse』で撮影した写真を、マウスを動かしながら見てほしい。&lt;/p&gt;
+&lt;div id=&#34;fyu_3e9camgo2k&#34; class=&#34;fyu_container fyu_vertical&#34; style=&#34;margin:auto&#34;&gt;&lt;/div&gt;
+&lt;script src=&#34;https://fyu.se/embed?v=3.0&#34;&gt;&lt;/script&gt;
+&lt;script&gt;
+
+FYU.add(&#34;3e9camgo2k&#34;, &#34;fyu_3e9camgo2k&#34;);
+
+&lt;/script&gt;</description>
+    </item>
+    
+    <item>
+      <title>久しぶりです!Octopress</title>
+      <link>https://www.masato-nike.net/post/2017-10-07-hello/</link>
+      <pubDate>Sat, 07 Oct 2017 08:23:00 +0900</pubDate>
+      
+      <guid>https://www.masato-nike.net/post/2017-10-07-hello/</guid>
+      <description>久しぶりです!Octopress</description>
+    </item>
+    
+    <item>
+      <title>さくらインターネットでサーバ構築②</title>
+      <link>https://www.masato-nike.net/post/2016-06-21-buildserverdns/</link>
+      <pubDate>Tue, 21 Jun 2016 05:38:10 +0900</pubDate>
+      
+      <guid>https://www.masato-nike.net/post/2016-06-21-buildserverdns/</guid>
+      <description>&lt;p&gt;今回はDNSサーバの構築について書こうと思いますが、
+タイトルには『さくらインターネット』と書いていますが、
+今回、さくらインターネットでドメインを取得しなかったため、
+さくらインターネットはあまり関係ないです。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Octopressで表を挿入する</title>
+      <link>https://www.masato-nike.net/post/2016-06-16-octopress/</link>
+      <pubDate>Thu, 16 Jun 2016 10:52:50 +0900</pubDate>
+      
+      <guid>https://www.masato-nike.net/post/2016-06-16-octopress/</guid>
+      <description>&lt;p&gt;昨日の投稿で表を入れようとして、少しはまったので、メモ代わりに書いておきます。&lt;/p&gt;
+&lt;h2 id=&#34;1-表の作り方&#34;&gt;1. 表の作り方&lt;/h2&gt;
+&lt;p&gt;Markdownでの表の作り方は簡単で、以下のようにすれば、それぞれ左寄せ、中央寄せ、右寄せになります。&lt;/p&gt;
+&lt;pre class=&#34;brush: xhtml;&#34;&gt;
+|分類|項目|価格|
+|:--|:--:|--:|
+|果物|りんご|100|
+|果物|バナナ×10|1000|
+|野菜|セロリ|88|
+|飲み物|牛乳|200|
+&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>さくらインターネットでサーバ構築①</title>
+      <link>https://www.masato-nike.net/post/2016-06-15-buildserver/</link>
+      <pubDate>Wed, 15 Jun 2016 15:46:36 +0900</pubDate>
+      
+      <guid>https://www.masato-nike.net/post/2016-06-15-buildserver/</guid>
+      <description>&lt;p&gt;ひとこと、ふたことつぶやいていたけど、そろそろブログらしいことを書こうと思う。&lt;br /&gt;
+いままではブログだのホームページだのは&lt;a href=&#34;http://geocities.yahoo.co.jp/&#34; title=&#34;Yahoo!ジオシティーズ&#34;&gt;Yahoo!ジオシティーズ&lt;/a&gt;や&lt;a href=&#34;http://www.ameba.jp/&#34; title=&#34;アメブロ&#34;&gt;アメブロ&lt;/a&gt;を使用していたのだが、Ruby on Railsとかのページを作ってみたいし、どうせならブログもコードとかをきちんと書けるものが欲しいな。と思っていたので、今回はじめてレンタルサーバ(VPS)というものを借りることにした。&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Octopressを導入してみた</title>
+      <link>https://www.masato-nike.net/post/2016-06-15-octopress/</link>
+      <pubDate>Wed, 15 Jun 2016 06:00:44 +0900</pubDate>
+      
+      <guid>https://www.masato-nike.net/post/2016-06-15-octopress/</guid>
+      <description>以下のサイトを参考にさせてもらい、Octopressを導入してみた。
+エンジニアのブログは Octopress が最適 - do blog</description>
+    </item>
+    
+    <item>
+      <title>Hello!Octopress</title>
+      <link>https://www.masato-nike.net/post/2016-06-12-hello/</link>
+      <pubDate>Sun, 12 Jun 2016 06:34:46 +0900</pubDate>
+      
+      <guid>https://www.masato-nike.net/post/2016-06-12-hello/</guid>
+      <description>Hello!Octopress</description>
+    </item>
+    
+  </channel>
+</rss>
