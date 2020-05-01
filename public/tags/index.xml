@@ -5,10 +5,82 @@
     <link>http://blog.masato-nike.net/tags/</link>
     <description>Recent content in Tags on ないきまさとの部屋</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 01 May 2020 05:46:14 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 01 May 2020 19:11:24 +0900</lastBuildDate>
     
 	<atom:link href="http://blog.masato-nike.net/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Android</title>
+      <link>http://blog.masato-nike.net/tags/android/</link>
+      <pubDate>Fri, 01 May 2020 19:11:24 +0900</pubDate>
+      
+      <guid>http://blog.masato-nike.net/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>iPhone</title>
+      <link>http://blog.masato-nike.net/tags/iphone/</link>
+      <pubDate>Fri, 01 May 2020 19:11:24 +0900</pubDate>
+      
+      <guid>http://blog.masato-nike.net/tags/iphone/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SmartPhoneAppli</title>
+      <link>http://blog.masato-nike.net/tags/smartphoneappli/</link>
+      <pubDate>Fri, 01 May 2020 19:11:24 +0900</pubDate>
+      
+      <guid>http://blog.masato-nike.net/tags/smartphoneappli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>WebMeeting</title>
+      <link>http://blog.masato-nike.net/tags/webmeeting/</link>
+      <pubDate>Fri, 01 May 2020 19:11:24 +0900</pubDate>
+      
+      <guid>http://blog.masato-nike.net/tags/webmeeting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Build Server</title>
+      <link>http://blog.masato-nike.net/tags/build-server/</link>
+      <pubDate>Fri, 01 May 2020 19:07:06 +0900</pubDate>
+      
+      <guid>http://blog.masato-nike.net/tags/build-server/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>http://blog.masato-nike.net/tags/linux/</link>
+      <pubDate>Fri, 01 May 2020 19:07:06 +0900</pubDate>
+      
+      <guid>http://blog.masato-nike.net/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SSL</title>
+      <link>http://blog.masato-nike.net/tags/ssl/</link>
+      <pubDate>Fri, 01 May 2020 19:07:06 +0900</pubDate>
+      
+      <guid>http://blog.masato-nike.net/tags/ssl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>COVID-19</title>
+      <link>http://blog.masato-nike.net/tags/covid-19/</link>
+      <pubDate>Fri, 01 May 2020 15:50:57 +0900</pubDate>
+      
+      <guid>http://blog.masato-nike.net/tags/covid-19/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Hello World</title>
@@ -65,29 +137,11 @@
     </item>
     
     <item>
-      <title>SmartPhoneAppli</title>
-      <link>http://blog.masato-nike.net/tags/smartphoneappli/</link>
-      <pubDate>Sat, 07 Oct 2017 15:31:13 +0900</pubDate>
-      
-      <guid>http://blog.masato-nike.net/tags/smartphoneappli/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Octopress</title>
       <link>http://blog.masato-nike.net/tags/octopress/</link>
       <pubDate>Sat, 07 Oct 2017 08:23:00 +0900</pubDate>
       
       <guid>http://blog.masato-nike.net/tags/octopress/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Build Server</title>
-      <link>http://blog.masato-nike.net/tags/build-server/</link>
-      <pubDate>Tue, 21 Jun 2016 05:38:10 +0900</pubDate>
-      
-      <guid>http://blog.masato-nike.net/tags/build-server/</guid>
       <description></description>
     </item>
     

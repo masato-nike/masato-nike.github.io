@@ -1,1 +1,4 @@
 User-agent: *
+Disallow: 
+
+Sitemap: http://masato-nike.github.io/sitemap.xml 
