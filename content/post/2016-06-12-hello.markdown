@@ -1,0 +1,8 @@
+---
+layout: post
+title: "Hello!Octopress"
+date: 2016-06-12 06:34:46 +0900
+comments: true
+tags: ['Octopress', 'Hello World']
+---
+Hello!Octopress

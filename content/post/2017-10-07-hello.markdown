@@ -1,0 +1,8 @@
+---
+layout: post
+title: "久しぶりです!Octopress"
+date: 2017-10-07 08:23:00 +0900
+comments: true
+tags: ['Octopress', 'Hello World']
+---
+久しぶりです!Octopress
