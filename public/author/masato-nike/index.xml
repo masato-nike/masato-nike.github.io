@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on ないきまさとの部屋</title>
-    <link>http://blog.masato-nike.net/post/</link>
-    <description>Recent content in Posts on ないきまさとの部屋</description>
+    <title>Masato Nike on ないきまさとの部屋</title>
+    <link>http://blog.masato-nike.net/author/masato-nike/</link>
+    <description>Recent content in Masato Nike on ないきまさとの部屋</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 01 May 2020 19:11:24 +0900</lastBuildDate>
     
-	<atom:link href="http://blog.masato-nike.net/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.masato-nike.net/author/masato-nike/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
