@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>COVID-19 on ないきまさとの部屋</title>
+    <link>http://blog.masato-nike.net/tags/covid-19/</link>
+    <description>Recent content in COVID-19 on ないきまさとの部屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 01 May 2020 15:50:57 +0900</lastBuildDate>
+    
+	<atom:link href="http://blog.masato-nike.net/tags/covid-19/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Web会議システム構築（序章 コロナに負けるな！）</title>
+      <link>http://blog.masato-nike.net/post/2020-05-01-web-meeting-introduction/</link>
+      <pubDate>Fri, 01 May 2020 15:50:57 +0900</pubDate>
+      
+      <guid>http://blog.masato-nike.net/post/2020-05-01-web-meeting-introduction/</guid>
+      <description>&lt;p&gt;新型コロナウイルスの感染が拡大し、緊急事態宣言が出される中、Web会議の需要が出てきていると思います。&lt;br /&gt;
+インターネットを介したWeb会議では『Zoom』が主流になってきているのでしょうか、よく耳にします。&lt;br /&gt;
+&lt;br /&gt;
+今回は「イントラネットの中だけで完結させたい」という要望があったので、そうした際のWeb会議システムの構築について、3回に分けて記述していきたいと思います。&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
