@@ -140,13 +140,34 @@
 Webカメラがないのでは、せっかく『Jitsi Meet』でWebシステムを構築したとしても使い物になりません。<br />
 そこで注目したのがスマートフォンに搭載されているカメラをWebカメラの代わりにできないかということです。<br /></p>
 <h2 id="1-ivcam">1. iVCam</h2>
-<p>とりあえず、リンクだけ貼っておきます。<br />
+<p>インストールは簡単なので、とりあえず、リンクだけ貼っておきます。<br />
 <br />
 <a href="https://play.google.com/store/apps/details?id=com.e2esoft.ivcam&amp;hl=ja" title="スマホ（Android）のカメラをWebカメラにするアプリ">スマホ（Android）のカメラをWebカメラにするアプリ</a><br />
 <br />
 <a href="https://apps.apple.com/jp/app/ivcam-%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E3%82%AB%E3%83%A1%E3%83%A9/id1164464478" title="スマホ（iPhone）のカメラをWebカメラにするアプリ">スマホ（iPhone）のカメラをWebカメラにするアプリ</a><br />
 <br />
-<a href="https://www.e2esoft.com/ivcam/" title="スマホのカメラをパソコンで認識させるソフト">スマホのカメラをパソコンで認識させるソフト</a><br /></p>
+<a href="https://www.e2esoft.com/ivcam/" title="スマホのカメラをパソコンで認識させるソフト">スマホのカメラをパソコンで認識させるソフト</a><br />
+これらをインストールしたら、同一ネットワーク（Wi-Fi環境）にてパソコン・スマホの両方でiVCamを実行するか、もしくは、USBケーブルでスマホとパソコンを接続し、実行してください。<br /></p>
+<h1 id="2-仮想サウンドカード">2. 仮想サウンドカード</h1>
+<p>私のパソコン環境では市販のサウンドカードを増設してあるので、マイクはLineInで平気だったのですが、サウンドカードを増設していない人は仮想サウンドカードというのが必要みたいです。<br />
+ここでは無料の仮想サウンドカードとして、『<a href="https://www.vb-audio.com/Cable/index.htm" title="VB-CABLE">VB-CABLE</a>』を紹介します。<br />
+<br />
+(1) 以下のURLのDownloadをクリックし、VB-CABLE Driverをダウンロードしてください。<br />
+<br />
+<a href="https://www.vb-audio.com/Cable/index.htm" title="https://www.vb-audio.com/Cable/index.htm">https://www.vb-audio.com/Cable/index.htm</a><br />
+<br />
+(2) ダウンロードしたファイルを解凍し、VBCABLE_Setup_x64.exe（もしくは、VBCABLE_Setup.exe）を右クリックして、[管理者として実行]をクリックしてください。<br />
+<br />
+(3) [Install]をクリックしてください。<br />
+<br />
+次に、Windowsのサウンドの設定です。<br />
+(4) [スタートメニュー]－[設定]より、[システム]をクリックしてください。<br />
+<img src="/images/blog/WebMeeting4/WebMeet4_001.JPG" alt="Web会議システム構築"> <br /><br />
+<br />
+(5) [サウンド]を選択し、出力を&quot;スピーカー&rdquo;、入力を&quot;CABLE Putput (VB-Audio Virtual Cable)&ldquo;に設定してください。<br />
+<img src="/images/blog/WebMeeting4/WebMeet4_002.JPG" alt="Web会議システム構築"> <br /><br />
+<br />
+以上で設定は終わりです。Jitsi Meetサーバに接続し、相手に音声が伝わることを確認してください。</p>
     
 </div>
 
