@@ -142,58 +142,10 @@
 <p>Web会議システム『Jitsi Meet』を動作させるためには、SSLサーバ証明書が必要です。<br />
 インターネット内のサーバであれば、『<a href="https://letsencrypt.org/ja/" title="Let's Encrypt">Let&rsquo;s Encrypt</a>』といった無料のSSLサーバ証明書が使えるのですが、今回はイントラネット内で利用するということが前提ですので、『Let&rsquo;s Encrypt』は使えません。<br />
 そこで、OpenSSLを使ったオレオレサーバ証明書が必要になります。<br /></p>
-<h2 id="1-ssl証明書の発行">1. SSL証明書の発行</h2>
-<p>(1) Jitsi Meetをインストールした仮想Linuxサーバにログインし、以下のコマンドを実行してください。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo mkdir /etc/ssl/work
-cd ~
-mkdir work
-cd work
-vi subjectnames.txt
-</code></pre></div><p>(2) subjectnames.txtの内容は以下を入力してください。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">subjectAltName <span style="color:#f92672">=</span> DNS:&lt;&lt;host名.ドメイン名&gt;&gt;, IP:192.168.100.10
-</code></pre></div><p>(3) 以下のコマンドを入力してください。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo openssl genrsa <span style="color:#ae81ff">2048</span> &gt; server.key
-sudo openssl req -new -key server.key -subj <span style="color:#e6db74">&#34;/C=JP/ST=Some-State/O=Some-Org/CN=&lt;&lt;host名.ドメイン名&gt;&gt;&#34;</span> &gt; server.csr
-sudo openssl x509 -days <span style="color:#ae81ff">3650</span> -req -extfile subjectnames.txt -signkey server.key &lt; server.csr &gt; server.crt
-more server.crt
-</code></pre></div><p>(4) server.crtの中身をコピーし、ローカルパソコン内に保存してください（ファイル名：server.crt）。<br />
-<br /></p>
-<h2 id="2-クライアントへの証明書のインストール">2. クライアントへの証明書のインストール</h2>
-<p>(1) ローカルパソコンにて、Google Chromeを起動してください。<br />
-　　※Google Chrimeがインストールされていない場合は、インストールしてください。<br />
-(2) 右上のメニューから[設定]をクリックしてください。
-<img src="/images/blog/WebMeeting3/WebMeeting3_0000.JPG" alt="Web会議システム構築"> <br /><br />
-(3)[プライバシーとセキュリティ]をクリックしてください。
-<img src="/images/blog/WebMeeting3/WebMeeting3_0001.JPG" alt="Web会議システム構築"> <br /><br />
-(4) [もっと見る]をクリックし、[証明書の管理]をクリックしてください。
-<img src="/images/blog/WebMeeting3/WebMeeting3_0002.JPG" alt="Web会議システム構築"> <br /><br />
-(5) [信頼されたルート証明機関]をクリックし、[インポート]をクリックしてください。
-<img src="/images/blog/WebMeeting3/WebMeeting3_0003.JPG" alt="Web会議システム構築"> <br /><br />
-(6) [次へ]をクリックしてください。
-<img src="/images/blog/WebMeeting3/WebMeeting3_0004.JPG" alt="Web会議システム構築"> <br /><br />
-(7) [参照]を押し、ローカルパソコンに保存した&quot;server.crt&quot;を選択後、[次へ]をクリックしてください。
-<img src="/images/blog/WebMeeting3/WebMeeting3_0005.JPG" alt="Web会議システム構築"> <br /><br />
-(8) [信頼されたルート証明機関]であることを確認し、[次へ]をクリックしてください。
-<img src="/images/blog/WebMeeting3/WebMeeting3_0006.JPG" alt="Web会議システム構築"> <br /><br />
-(9) [完了]をクリックしてください。
-<img src="/images/blog/WebMeeting3/WebMeeting3_0007.JPG" alt="Web会議システム構築"> <br /><br />
-(10) [はい(Y)]をクリックしてください。
-<img src="/images/blog/WebMeeting3/WebMeeting3_0008.JPG" alt="Web会議システム構築"> <br /><br />
-<br />
-この作業は本システムを利用するすべてのパソコンで行ってください。<br />
-<br /></p>
-<h2 id="3-jit-meetの設定と起動">3. Jit Meetの設定と起動</h2>
-<p>(1) 以下のコマンドを実行してください。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo mv server.* /etc/ssl/work
-sudo vi /etc/nginx/sites-enabled/&lt;&lt;host名.ドメイン名&gt;&gt;.conf
-</code></pre></div><p>(2) &laquo;host名.ドメイン名&raquo;.confの以下のように修正してください。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssl_certificate /etc/ssl/work/server.crt;
-ssl_certificate_key /etc/ssl/work/server.key;
-</code></pre></div><p>(3) 以下のコマンドを実行してください。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo systemctl restart nginx
-sudo systemctl status nginx
-</code></pre></div><p>以上でJit Meetが起動しているはずです。<br />
-SSLサーバ証明書をインストールしたGoogleChromeでサーバにアクセスしてください。</p>
+
+    
+    <a href="http://blog.masato-nike.net/post/2020-05-01-web-meeting-3/" class="more">続きを読む</a>
+    
     
 </div>
 

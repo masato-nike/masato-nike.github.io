@@ -5,42 +5,57 @@
 <url>
   <loc>http://blog.masato-nike.net/</loc>
   <priority>1.0</priority>
-  <lastmod>2020-05-02T06:41:53+09:00</lastmod>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
 </url>
 <url>
-  <loc>http://blog.masato-nike.net/post/2020-05-01-web-meeting-4/</loc>
+  <loc>http://blog.masato-nike.net/post/2020-05-06-windows10-auto-login/</loc>
   <priority>0.8</priority>
-  <lastmod>2020-05-02T06:41:53+09:00</lastmod>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
 </url>
 <url>
   <loc>http://blog.masato-nike.net/author/masato-nike/</loc>
   <priority>0.8</priority>
-  <lastmod>2020-05-02T06:41:53+09:00</lastmod>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
+</url>
+<url>
+  <loc>http://blog.masato-nike.net/tags/windows/</loc>
+  <priority>0.8</priority>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
+</url>
+<url>
+  <loc>http://blog.masato-nike.net/tags/command/</loc>
+  <priority>0.8</priority>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
+</url>
+<url>
+  <loc>http://blog.masato-nike.net/post/2020-05-01-web-meeting-4/</loc>
+  <priority>0.8</priority>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
 </url>
 <url>
   <loc>http://blog.masato-nike.net/tags/iphone/</loc>
   <priority>0.8</priority>
-  <lastmod>2020-05-02T06:41:53+09:00</lastmod>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
 </url>
 <url>
   <loc>http://blog.masato-nike.net/tags/android/</loc>
   <priority>0.8</priority>
-  <lastmod>2020-05-02T06:41:53+09:00</lastmod>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
 </url>
 <url>
   <loc>http://blog.masato-nike.net/tags/smartphoneappli/</loc>
   <priority>0.8</priority>
-  <lastmod>2020-05-02T06:41:53+09:00</lastmod>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
 </url>
 <url>
   <loc>http://blog.masato-nike.net/tags/webmeeting/</loc>
   <priority>0.8</priority>
-  <lastmod>2020-05-02T06:41:53+09:00</lastmod>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
 </url>
 <url>
   <loc>http://blog.masato-nike.net/post/2020-05-01-web-meeting-3/</loc>
   <priority>0.8</priority>
-  <lastmod>2020-05-02T06:41:53+09:00</lastmod>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
 </url>
 <url>
   <loc>http://blog.masato-nike.net/post/2020-05-01-web-meet-1/</loc>
@@ -53,87 +68,87 @@
 <url>
   <loc>http://blog.masato-nike.net/tags/build-server/</loc>
   <priority>0.8</priority>
-  <lastmod>2020-05-02T06:41:53+09:00</lastmod>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
 </url>
 <url>
   <loc>http://blog.masato-nike.net/tags/linux/</loc>
   <priority>0.8</priority>
-  <lastmod>2020-05-02T06:41:53+09:00</lastmod>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
 </url>
 <url>
   <loc>http://blog.masato-nike.net/tags/ssl/</loc>
   <priority>0.8</priority>
-  <lastmod>2020-05-02T06:41:53+09:00</lastmod>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
 </url>
 <url>
   <loc>http://blog.masato-nike.net/post/2020-05-01-web-meeting-2/</loc>
   <priority>0.8</priority>
-  <lastmod>2020-05-02T06:41:53+09:00</lastmod>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
 </url>
 <url>
   <loc>http://blog.masato-nike.net/post/2020-05-01-web-meeting-1/</loc>
   <priority>0.8</priority>
-  <lastmod>2020-05-02T06:41:53+09:00</lastmod>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
 </url>
 <url>
   <loc>http://blog.masato-nike.net/post/2020-05-01-web-meeting-introduction/</loc>
   <priority>0.8</priority>
-  <lastmod>2020-05-02T06:41:53+09:00</lastmod>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
 </url>
 <url>
   <loc>http://blog.masato-nike.net/tags/covid-19/</loc>
   <priority>0.8</priority>
-  <lastmod>2020-05-02T06:41:53+09:00</lastmod>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
 </url>
 <url>
   <loc>http://blog.masato-nike.net/post/2020-05-01-hello/</loc>
   <priority>0.8</priority>
-  <lastmod>2020-05-02T06:41:53+09:00</lastmod>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
 </url>
 <url>
   <loc>http://blog.masato-nike.net/tags/hugo/</loc>
   <priority>0.8</priority>
-  <lastmod>2020-05-02T06:41:53+09:00</lastmod>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
 </url>
 <url>
   <loc>http://blog.masato-nike.net/tags/hello-world/</loc>
   <priority>0.8</priority>
-  <lastmod>2020-05-02T06:41:53+09:00</lastmod>
-</url>
-<url>
-  <loc>http://blog.masato-nike.net/post/2017-10-29-instagram-pc/</loc>
-  <priority>0.8</priority>
-  <lastmod>2020-05-02T06:41:53+09:00</lastmod>
-</url>
-<url>
-  <loc>http://blog.masato-nike.net/tags/sns/</loc>
-  <priority>0.8</priority>
-  <lastmod>2020-05-02T06:41:53+09:00</lastmod>
-</url>
-<url>
-  <loc>http://blog.masato-nike.net/tags/instagram/</loc>
-  <priority>0.8</priority>
-  <lastmod>2020-05-02T06:41:53+09:00</lastmod>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
 </url>
 <url>
   <loc>http://blog.masato-nike.net/page/2/</loc>
   <priority>0.8</priority>
-  <lastmod>2020-05-02T06:41:53+09:00</lastmod>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
 </url>
 <url>
   <loc>http://blog.masato-nike.net/author/masato-nike/page/2/</loc>
   <priority>0.7</priority>
-  <lastmod>2020-05-02T06:41:53+09:00</lastmod>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
 </url>
 <url>
   <loc>http://blog.masato-nike.net/post/2017-10-07-fyuse/</loc>
   <priority>0.7</priority>
-  <lastmod>2020-05-02T06:41:53+09:00</lastmod>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
 </url>
 <url>
   <loc>http://blog.masato-nike.net/tags/makeuphomepage/</loc>
   <priority>0.7</priority>
-  <lastmod>2020-05-02T06:41:53+09:00</lastmod>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
+</url>
+<url>
+  <loc>http://blog.masato-nike.net/post/2016-06-21-buildserverdns/</loc>
+  <priority>0.7</priority>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
+</url>
+<url>
+  <loc>http://blog.masato-nike.net/tags/centos/</loc>
+  <priority>0.7</priority>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
+</url>
+<url>
+  <loc>http://blog.masato-nike.net/post/2016-06-15-buildserver/</loc>
+  <priority>0.7</priority>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
 </url>
 <url>
   <loc>http://blog.masato-nike.net/post/2020-05-01-web-meet-3/</loc>
@@ -144,69 +159,69 @@
   <priority>0.7</priority>
 </url>
 <url>
-  <loc>http://blog.masato-nike.net/post/2016-06-21-buildserverdns/</loc>
-  <priority>0.7</priority>
-  <lastmod>2020-05-02T06:41:53+09:00</lastmod>
-</url>
-<url>
-  <loc>http://blog.masato-nike.net/tags/centos/</loc>
-  <priority>0.7</priority>
-  <lastmod>2020-05-02T06:41:53+09:00</lastmod>
-</url>
-<url>
-  <loc>http://blog.masato-nike.net/post/2016-06-15-buildserver/</loc>
-  <priority>0.7</priority>
-  <lastmod>2020-05-02T06:41:53+09:00</lastmod>
-</url>
-<url>
   <loc>http://blog.masato-nike.net/post/2017-10-07-hello/</loc>
   <priority>0.7</priority>
-  <lastmod>2020-05-02T06:41:53+09:00</lastmod>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
 </url>
 <url>
   <loc>http://blog.masato-nike.net/tags/octopress/</loc>
   <priority>0.7</priority>
-  <lastmod>2020-05-02T06:41:53+09:00</lastmod>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
 </url>
 <url>
   <loc>http://blog.masato-nike.net/post/2016-06-12-hello/</loc>
   <priority>0.7</priority>
-  <lastmod>2020-05-02T06:41:53+09:00</lastmod>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
+</url>
+<url>
+  <loc>http://blog.masato-nike.net/post/2017-10-29-instagram-pc/</loc>
+  <priority>0.7</priority>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
+</url>
+<url>
+  <loc>http://blog.masato-nike.net/tags/sns/</loc>
+  <priority>0.7</priority>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
+</url>
+<url>
+  <loc>http://blog.masato-nike.net/tags/instagram/</loc>
+  <priority>0.7</priority>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
 </url>
 <url>
   <loc>http://blog.masato-nike.net/post/2017-10-11-facebookfeed/</loc>
   <priority>0.7</priority>
-  <lastmod>2020-05-02T06:41:53+09:00</lastmod>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
 </url>
 <url>
   <loc>http://blog.masato-nike.net/tags/facebook/</loc>
   <priority>0.7</priority>
-  <lastmod>2020-05-02T06:41:53+09:00</lastmod>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
 </url>
 <url>
   <loc>http://blog.masato-nike.net/post/2016-06-16-octopress/</loc>
   <priority>0.7</priority>
-  <lastmod>2020-05-02T06:41:53+09:00</lastmod>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
 </url>
 <url>
   <loc>http://blog.masato-nike.net/tags/markdown/</loc>
   <priority>0.7</priority>
-  <lastmod>2020-05-02T06:41:53+09:00</lastmod>
-</url>
-<url>
-  <loc>http://blog.masato-nike.net/post/2016-06-15-octopress/</loc>
-  <priority>0.7</priority>
-  <lastmod>2020-05-02T06:41:53+09:00</lastmod>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
 </url>
 <url>
   <loc>http://blog.masato-nike.net/page/3/</loc>
   <priority>0.7</priority>
-  <lastmod>2020-05-02T06:41:53+09:00</lastmod>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
 </url>
 <url>
   <loc>http://blog.masato-nike.net/author/masato-nike/page/3/</loc>
   <priority>0.6</priority>
-  <lastmod>2020-05-02T06:41:53+09:00</lastmod>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
+</url>
+<url>
+  <loc>http://blog.masato-nike.net/post/2016-06-15-octopress/</loc>
+  <priority>0.6</priority>
+  <lastmod>2020-05-06T17:34:17+09:00</lastmod>
 </url>
 
 </urlset>
