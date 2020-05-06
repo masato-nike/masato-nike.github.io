@@ -1,0 +1,22 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ないきまさとの部屋</title>
+    <link>http://blog.masato-nike.net/</link>
+    <description>Recent content on ないきまさとの部屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 07 May 2020 08:35:59 +0900</lastBuildDate>
+    
+        <atom:link href="http://blog.masato-nike.net/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Posts</title>
+      <link>http://blog.masato-nike.net/post/</link>
+      <pubDate>Thu, 07 May 2020 08:35:59 +0900</pubDate>
+      
+      <guid>http://blog.masato-nike.net/post/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
