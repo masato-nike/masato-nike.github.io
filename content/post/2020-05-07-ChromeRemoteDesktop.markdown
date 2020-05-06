@@ -25,6 +25,6 @@ tags: ['Windows', 'Remote']
 ![Google Chrome Remote Desktop Web](/images/blog/ChromeRemoteDesktop/ChromeRemoteDesktop_006.JPG "Google Chrome Remote Desktop Web") <br /><br />
 (8) [はい]をクリックしてください。<br />
 ![Google Chrome Remote Desktop Web](/images/blog/ChromeRemoteDesktop/ChromeRemoteDesktop_007.JPG "Google Chrome Remote Desktop Web") <br /><br />
-(9) [はい]をクリックしてください。<br />
+(9) [OK]をクリックしてください。<br />
 ![Google Chrome Remote Desktop Web](/images/blog/ChromeRemoteDesktop/ChromeRemoteDesktop_008.JPG "Google Chrome Remote Desktop Web") <br /><br />
 以上でChrome Remote Desktopのインストールは完了です。
