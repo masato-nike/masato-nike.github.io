@@ -178,7 +178,7 @@ vim docker-compose-install.sh
 output<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;/usr/local/bin/docker-compose&#39;</span>
 curl -L https://github.com/docker/compose/releases/download/$compose_version/docker-compose-<span style="color:#66d9ef">$(</span>uname -s<span style="color:#66d9ef">)</span>-<span style="color:#66d9ef">$(</span>uname -m<span style="color:#66d9ef">)</span> -o $output
 chmod +x $output
-echo $output --version
+$output --version
 </code></pre></div><p>(2) 以下のコマンドを入力してください。<br /></p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">chmod +x docker-compose-install.sh
 ./docker-compose-install.sh

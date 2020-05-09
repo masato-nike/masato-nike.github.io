@@ -63,7 +63,7 @@ compose_version=$(curl https://api.github.com/repos/docker/compose/releases/late
 output='/usr/local/bin/docker-compose'
 curl -L https://github.com/docker/compose/releases/download/$compose_version/docker-compose-$(uname -s)-$(uname -m) -o $output
 chmod +x $output
-echo $output --version
+$output --version
 ```
 (2) 以下のコマンドを入力してください。<br />
 ``` bash
