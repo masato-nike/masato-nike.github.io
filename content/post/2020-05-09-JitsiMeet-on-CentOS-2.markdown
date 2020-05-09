@@ -68,6 +68,7 @@ echo $output --version
 (2) 以下のコマンドを入力してください。<br />
 ``` bash
 chmod +x docker-compose-install.sh
+./docker-compose-install.sh
 ```
 <br />
 ## 4. Jitsi Meetのインストール
