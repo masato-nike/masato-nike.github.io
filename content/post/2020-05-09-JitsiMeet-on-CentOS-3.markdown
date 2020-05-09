@@ -58,8 +58,6 @@ ssl_certificate_key /config/keys/server.key;
 ```
 (2) 以下のコマンドを入力してください。
 ``` bash
-chcon system_u:object_r:httpd_config_t:s0 /etc/ssl/work/server.crt
-chcon system_u:object_r:httpd_config_t:s0 /etc/ssl/work/server.key
 cd ~/docker-jitsi-meet/
 docker-compose up -D
 ```
