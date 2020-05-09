@@ -47,6 +47,9 @@ systemctl enable docker
 systemctl start docker
 docker version
 dnf upgrade
+firewall-cmd --add-service http --permanent
+firewall-cmd --add-service https --permanent
+firewall-cmd --add-port 10000-20000/udp --permanent
 firewall-cmd --add-masquerade --permanent
 firewall-cmd --reload
 ```
@@ -97,6 +100,8 @@ ENABLE_LETSENCRYPT=0
 ./gen-passwords.sh
 mkdir -p ~/.jitsi-meet-cfg/{web/letsencrypt,transcripts,prosody,jicofo,jvb}
 docker-compose pull
+docker-compose up -d
+docker-compose down
 ```
 以上で、『Jitsi Meet』のインストールは終了ですが、まだ起動はできません。<br />
 httpsでアクセスするため、SSLサーバ証明書の設定が必要になります。<br />

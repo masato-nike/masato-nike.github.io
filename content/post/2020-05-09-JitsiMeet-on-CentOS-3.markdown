@@ -33,7 +33,7 @@ subjectAltName = DNS:<<host名.ドメイン名>>, IP:192.168.100.10
 openssl genrsa 2048 > server.key
 openssl req -new -key server.key -subj "/C=JP/ST=Some-State/O=Some-Org/CN=<<host名.ドメイン名>>" > server.csr
 openssl x509 -days 3650 -req -extfile subjectnames.txt -signkey server.key < server.csr > server.crt
-server.crt
+more server.crt
 ```
 (4) server.crtの中身をコピーし、ローカルパソコン内に保存してください（ファイル名：server.crt）。<br />
 <br />
@@ -48,7 +48,7 @@ mv server.* /etc/ssl/work/
 ## 2. Jit Meetの設定と起動
 (1) 以下のコマンドを入力してください。
 ``` bash
-cp /etc/ssl/work/server.* ~/.jitsi-meet-cfg/web/nginx/keys/
+cp /etc/ssl/work/server.* ~/.jitsi-meet-cfg/web/keys/
 vim ~/.jitsi-meet-cfg/web/nginx/ssl.conf
 ```
 【編集内容】
@@ -59,7 +59,7 @@ ssl_certificate_key /config/keys/server.key;
 (2) 以下のコマンドを入力してください。
 ``` bash
 cd ~/docker-jitsi-meet/
-docker-compose up -D
+docker-compose up -d
 ```
 以上でJit Meetが起動しているはずです。<br />
 SSLサーバ証明書をインストールしたGoogleChromeでサーバにアクセスしてください。
