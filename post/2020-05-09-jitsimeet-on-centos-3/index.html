@@ -172,9 +172,7 @@ vim ~/.jitsi-meet-cfg/web/nginx/ssl.conf
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssl_certificate /config/keys/server.crt;
 ssl_certificate_key /config/keys/server.key;
 </code></pre></div><p>(2) 以下のコマンドを入力してください。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">chcon system_u:object_r:httpd_config_t:s0 /etc/ssl/work/server.crt
-chcon system_u:object_r:httpd_config_t:s0 /etc/ssl/work/server.key
-cd ~/docker-jitsi-meet/
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd ~/docker-jitsi-meet/
 docker-compose up -D
 </code></pre></div><p>以上でJit Meetが起動しているはずです。<br />
 SSLサーバ証明書をインストールしたGoogleChromeでサーバにアクセスしてください。</p>
