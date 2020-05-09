@@ -8,14 +8,14 @@
     <meta name="description" content="ないきまさとの部屋のブログ">
     <meta name="keywords" content="blog, ブログ, Octopress, Hugo, サーバ構築">
     <meta name="generator" content="Hugo 0.69.2" />
-    <title> Fyuseというアプリ | ないきまさとの部屋</title>
-    <meta name="description" content="Fyuseというアプリ - ないきまさとの部屋のブログ">
-    <meta itemprop="name" content="Fyuseというアプリ">
-    <meta itemprop="description" content="Fyuseというアプリ - ないきまさとの部屋のブログ">
-    <meta property="og:title" content="Fyuseというアプリ">
-    <meta property="og:description" content="Fyuseというアプリ - ないきまさとの部屋のブログ">
+    <title> Web会議システム構築（第2回 Linux（CentOS）へのJitsi Meetのインストール） | ないきまさとの部屋</title>
+    <meta name="description" content="Web会議システム構築（第2回 Linux（CentOS）へのJitsi Meetのインストール） - ないきまさとの部屋のブログ">
+    <meta itemprop="name" content="Web会議システム構築（第2回 Linux（CentOS）へのJitsi Meetのインストール）">
+    <meta itemprop="description" content="Web会議システム構築（第2回 Linux（CentOS）へのJitsi Meetのインストール） - ないきまさとの部屋のブログ">
+    <meta property="og:title" content="Web会議システム構築（第2回 Linux（CentOS）へのJitsi Meetのインストール）">
+    <meta property="og:description" content="Web会議システム構築（第2回 Linux（CentOS）へのJitsi Meetのインストール） - ないきまさとの部屋のブログ">
     <meta property="og:image" content="https://www.gravatar.com/avatar/51ecbe6f4b1283bcbae68fd9c38e38f0?size=200">
-    <meta property="og:url" content="http://blog.masato-nike.net/post/2017-10-07-fyuse/">
+    <meta property="og:url" content="http://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-2/">
     <meta property="og:site_name" content="ないきまさとの部屋">
     <meta property="og:type" content="article">
 
@@ -38,8 +38,8 @@
 <meta name="msapplication-TileImage" content="/ico/ms-icon-144x144.png">
 
     
-    <link href="/post/2017-10-07-fyuse/" rel="alternate" type="application/rss+xml" title="ないきまさとの部屋" />
-    <link href="/post/2017-10-07-fyuse/" rel="feed" type="application/rss+xml" title="ないきまさとの部屋" />
+    <link href="/post/2020-05-09-jitsimeet-on-centos-2/" rel="alternate" type="application/rss+xml" title="ないきまさとの部屋" />
+    <link href="/post/2020-05-09-jitsimeet-on-centos-2/" rel="feed" type="application/rss+xml" title="ないきまさとの部屋" />
     
 
     
@@ -106,7 +106,7 @@
      
     <div class="article-wrapper u-cf single">
         
-            <a class="bubble" href="http://blog.masato-nike.net/post/2017-10-07-fyuse/">
+            <a class="bubble" href="http://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-2/">
     <i class="fas fa-fw fa-pencil-alt"></i>
 </a>
 
@@ -114,11 +114,11 @@
     
 
     <div class="content">
-    <h1 class="article-title"><a href="http://blog.masato-nike.net/post/2017-10-07-fyuse/">Fyuseというアプリ</a></h1>
+    <h1 class="article-title"><a href="http://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-2/">Web会議システム構築（第2回 Linux（CentOS）へのJitsi Meetのインストール）</a></h1>
     <div class="meta">
         
         
-        <span class="date">2017-10-07 15:31:13</span>
+        <span class="date">2020-05-09 16:57:56</span>
         
         
 
@@ -136,17 +136,78 @@
     </div>
 
     
-    <p>仕事で、ホームページ上で商品紹介をするにあたって、商品の全体画像が欲しくて、いい感じに撮影できないか、あれこれググっていたら、『Fyuse』なるアプリを発見した！<br />
-なにはともあれ、『Fyuse』で撮影した写真を、マウスを動かしながら見てほしい。</p>
-<div id="fyu_3e9camgo2k" class="fyu_container fyu_vertical" style="margin:auto"></div>
-<script src="https://fyu.se/embed?v=3.0"></script>
-<script>
+    <p>Linux(CentOS)にWeb会議システム『Jitsi Meet』をインストールします。<br />
+前提として、以下を実施しているものとします。<br />
+<br />
+<a href="http://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-1/" title="第1回 Linux（CentOS）サーバの構築">第1回 Linux（CentOS）サーバの構築</a><br /></p>
+<h2 id="1-sshの設定">1. SSHの設定</h2>
+<p>(1) rootでログインし、以下のコマンドを入力してください。<br /></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">firewall-cmd --add-service ssh --permanent
+</code></pre></div><p>(2) rootでのログインを拒否するように設定します。<br />
+<br />
+【コマンド】</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">vim /etc/ssh/sshd_config
+</code></pre></div><p>【編集内容】</p>
+<pre><code>PermitRootLogin no
+</code></pre><p><br />
+(3) 以下のコマンドを入力してください。<br /></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">systemctl restart sshd
+systemctl status sshd
+</code></pre></div><p>以上で、SSHの設定は終了です。<br />
+<br /></p>
+<h2 id="2-dockerのインストール">2. Dockerのインストール</h2>
+<p>(1) rootでログインし、以下のコマンドを入力してください。<br /></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">dnf -y remove podman
+dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+dnf -y install --nobest docker-ce docker-ce-cli
+dnf -y update https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.2.13-3.1.el7.x86_64.rpm
+dnf -y update docker-ce
+systemctl enable docker
+systemctl start docker
+docker version
+dnf upgrade
+firewall-cmd --add-masquerade --permanent
+firewall-cmd --reload
+</code></pre></div><p><br /></p>
+<h2 id="3-docker-composeのインストール">3. Docker Composeのインストール</h2>
+<p>(1) rootでログインし、以下のコマンドを入力してください。<br /></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">dnf -y install jq
+vim docker-compose-install.sh
+</code></pre></div><p>【編集内容】</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">compose_version<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>curl https://api.github.com/repos/docker/compose/releases/latest | jq .name -r<span style="color:#66d9ef">)</span>
+output<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;/usr/local/bin/docker-compose&#39;</span>
+curl -L https://github.com/docker/compose/releases/download/$compose_version/docker-compose-<span style="color:#66d9ef">$(</span>uname -s<span style="color:#66d9ef">)</span>-<span style="color:#66d9ef">$(</span>uname -m<span style="color:#66d9ef">)</span> -o $output
+chmod +x $output
+echo $output --version
+</code></pre></div><p>(2) 以下のコマンドを入力してください。<br /></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">chmod +x docker-compose-install.sh
+</code></pre></div><p><br /></p>
+<h2 id="4-jitsi-meetのインストール">4. Jitsi Meetのインストール</h2>
+<p>(1) rootでログインし、以下のコマンドを入力してください。<br /></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone https://github.com/jitsi/docker-jitsi-meet <span style="color:#f92672">&amp;&amp;</span> cd docker-jitsi-meet
+cp env.example .env
+vim .env
+</code></pre></div><p>【編集内容】</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">CONFIG<span style="color:#f92672">=</span>/root/.jitsi-meet-cfg
 
-FYU.add("3e9camgo2k", "fyu_3e9camgo2k");
+HTTP_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">80</span>
 
-</script>
-<p>これはスマートフォンアプリなので、以下のサイトからダウンロードしてほしい。</p>
-<p><a href="https://www.fyu.se/" title="Fyuse公式サイト">Fyuse公式サイト</a></p>
+HTTPS_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">443</span>
+
+TZ<span style="color:#f92672">=</span>Asia/Tokyo
+
+PUBLIC_URL<span style="color:#f92672">=</span>https://hostname.yourdomain
+
+ENABLE_LETSENCRYPT<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+</code></pre></div><p>(2) 以下のコマンドを入力してください。<br /></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./gen-passwords.sh
+mkdir -p ~/.jitsi-meet-cfg/<span style="color:#f92672">{</span>web/letsencrypt,transcripts,prosody,jicofo,jvb<span style="color:#f92672">}</span>
+docker-compose pull
+</code></pre></div><p>以上で、『Jitsi Meet』のインストールは終了ですが、まだ起動はできません。<br />
+httpsでアクセスするため、SSLサーバ証明書の設定が必要になります。<br />
+SSLサーバ証明書の設定は以下に続きます。<br />
+<br />
+<a href="http://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-3/" title="第3回 オレオレサーバ証明書の発行～Jitsi Meetの設定">第3回 オレオレサーバ証明書の発行～Jitsi Meetの設定</a><br /></p>
     
 </div>
 
@@ -160,11 +221,15 @@ FYU.add("3e9camgo2k", "fyu_3e9camgo2k");
             <div class="links">
                 
                 
-                <a href="http://blog.masato-nike.net/tags/makeuphomepage/">MakeupHomePage</a>
+                <a href="http://blog.masato-nike.net/tags/build-server/">Build Server</a>
                 
                 
                 
-                <a href="http://blog.masato-nike.net/tags/smartphoneappli/">SmartPhoneAppli</a>
+                <a href="http://blog.masato-nike.net/tags/linux/">Linux</a>
+                
+                
+                
+                <a href="http://blog.masato-nike.net/tags/webmeeting/">WebMeeting</a>
                 
                 
             </div>

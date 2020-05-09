@@ -7,7 +7,7 @@ tags: ['Build Server', 'Linux', 'SSL', 'WebMeeting']
 ---
 本稿の前提条件として、以下が実施させているものとします。
 
-[第1回 Linux（Ubuntu）サーバの構築](http://blog.masato-nike.net/post/2020-05-01-web-meeting-1/ "第1回 Linux（Ubuntu）サーバの構築")<br />
+[第1回 Linux（Ubuntu）サーバの構築](http://blog.masato-nike.net/post/2020-05-09-JitsiMeet-on-CentOS-1/ "第1回 Linux（Ubuntu）サーバの構築")<br />
 
 [第2回 Linux（Ubuntu）へのJitsi Meetのインストール](http://blog.masato-nike.net/post/2020-05-01-web-meeting-2/ "第2回 Linux（Ubuntu）へのJitsi Meetのインストール")<br />
 
