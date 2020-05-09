@@ -9,7 +9,7 @@ enableRobotsTXT = true
 DefaultContentLanguage = "ja"
 
 # Enable / Disable Google Analytics statistics for your site
-googleAnalytics = "UA-79365305-1"
+googleAnalytics = "UA-79365305-2"
 
 # Enable / Disable comments on the articles via Disqus.
 disqusShortname = "bilberry-hugo-theme"
