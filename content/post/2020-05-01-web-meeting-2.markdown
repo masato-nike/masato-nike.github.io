@@ -8,7 +8,7 @@ tags: ['Build Server', 'Linux', 'WebMeeting']
 Linux(Ubuntu)にWeb会議システム『Jitsi Meet』をインストールします。<br />
 前提として、以下を実施しているものとします。<br />
 <br />
-[第1回 Linux（Ubuntu）サーバの構築](http://blog.masato-nike.net/post/2020-05-01-web-meet-1/ "第1回 Linux（Ubuntu）サーバの構築")<br />
+[第1回 Linux（Ubuntu）サーバの構築](http://blog.masato-nike.net/post/2020-05-01-web-meeting-1/ "第1回 Linux（Ubuntu）サーバの構築")<br />
 <!--more-->
 ## 1. SSHの設定
 (1) アプリケーションの一覧を表示してください。
@@ -74,4 +74,4 @@ sudo apt install jitsi-meet
 httpsでアクセスするため、SSLサーバ証明書の設定が必要になります。<br />
 SSLサーバ証明書の設定は以下に続きます。<br />
 <br />
-[第3回 オレオレサーバ証明書の発行～クライアントへの証明書のインストール](http://blog.masato-nike.net/post/2020-05-01-web-meet-3/ "第3回 オレオレサーバ証明書の発行～クライアントへの証明書のインストール")<br />
+[第3回 オレオレサーバ証明書の発行～クライアントへの証明書のインストール](http://blog.masato-nike.net/post/2020-05-01-web-meeting-3/ "第3回 オレオレサーバ証明書の発行～クライアントへの証明書のインストール")<br />

@@ -7,9 +7,9 @@ tags: ['Build Server', 'Linux', 'SSL', 'WebMeeting']
 ---
 本稿の前提条件として、以下が実施させているものとします。
 
-[第1回 Linux（Ubuntu）サーバの構築](http://blog.masato-nike.net/post/2020-05-01-web-meet-1/ "第1回 Linux（Ubuntu）サーバの構築")<br />
+[第1回 Linux（Ubuntu）サーバの構築](http://blog.masato-nike.net/post/2020-05-01-web-meeting-1/ "第1回 Linux（Ubuntu）サーバの構築")<br />
 
-[第2回 Linux（Ubuntu）へのJitsi Meetのインストール](http://blog.masato-nike.net/post/2020-05-01-web-meet-2/ "第2回 Linux（Ubuntu）へのJitsi Meetのインストール")<br />
+[第2回 Linux（Ubuntu）へのJitsi Meetのインストール](http://blog.masato-nike.net/post/2020-05-01-web-meeting-2/ "第2回 Linux（Ubuntu）へのJitsi Meetのインストール")<br />
 
 Web会議システム『Jitsi Meet』を動作させるためには、SSLサーバ証明書が必要です。<br />
 インターネット内のサーバであれば、『[Let's Encrypt](https://letsencrypt.org/ja/ "Let's Encrypt")』といった無料のSSLサーバ証明書が使えるのですが、今回はイントラネット内で利用するということが前提ですので、『Let's Encrypt』は使えません。<br />
