@@ -184,7 +184,7 @@
 (6) そのまま[次へ]をクリックしてください。<br />
 <img src="/images/blog/WebMeeting1/WebMeet1_0023.JPG" alt="Web会議システム構築"> <br /><br />
 (7) 20GB程度を指定し、[作成]をクリックしてください。<br />
-<img src="/images/blog/WebMeeting1/WebMeet1_0024.JPG" alt="Web会議システム構築"> <br /><br />
+<img src="/images/blog/JitsiMeetonCentOS1/InstallCentOS_015.JPG" alt="Web会議システム構築"><br /><br />
 (8) 作成した仮想マシンを選択し、設定(S)をクリックしてください。<br />
 <img src="/images/blog/WebMeeting1/WebMeet1_0025.JPG" alt="Web会議システム構築"> <br /><br />
 (9) [ネットワーク]を選択し、割り当て(A)を&quot;ブリッジアダプター&quot;にしてください。<br />
@@ -193,7 +193,47 @@
 <img src="/images/blog/JitsiMeetonCentOS1/InstallCentOS_000.JPG" alt="Web会議システム構築"><br /><br />
 <br /></p>
 <h2 id="4-centosのインストール">4. CentOSのインストール</h2>
-<p>これから書きます。。。</p>
+<p>(1) [起動(T)]をクリックし、作成した仮想マシンを起動させてください。<br />
+(2) [追加(A)]をクリックしてください。<br />
+<img src="/images/blog/WebMeeting1/WebMeet1_0027.JPG" alt="Web会議システム構築"> <br /><br />
+(3) ダウンロードしたCentOSのISOイメージを選択し、[選択]をクリックしてください。<br />
+<img src="/images/blog/JitsiMeetonCentOS1/InstallCentOS_016.JPG" alt="Web会議システム構築"><br /><br />
+(4) [起動]をクリックしてください。<br />
+<img src="/images/blog/JitsiMeetonCentOS1/InstallCentOS_017.JPG" alt="Web会議システム構築"><br /><br />
+(5) CentOSが起動したら、[Enter]キーを押してください。<br />
+<img src="/images/blog/JitsiMeetonCentOS1/InstallCentOS_001.JPG" alt="Web会議システム構築"><br /><br />
+(6) &ldquo;日本語&quot;を選択し、[続行]ボタンをクリックしてください。<br />
+<img src="/images/blog/JitsiMeetonCentOS1/InstallCentOS_002.JPG" alt="Web会議システム構築"><br /><br />
+(7) 以下の画面で様々なインストールの設定を行います。まずは[システム]の[インス（トール先）]をクリックしてください。<br />
+<img src="/images/blog/JitsiMeetonCentOS1/InstallCentOS_003.JPG" alt="Web会議システム構築"><br /><br />
+(8) [ローカルの標準ディスク]にて、作成した&quot;HARDDISK&quot;をクリックし、[完了]ボタンを押してください。<br />
+<img src="/images/blog/JitsiMeetonCentOS1/InstallCentOS_004.JPG" alt="Web会議システム構築"><br /><br />
+(9) 次に[ソフトウェアの選択]をクリックしてください。<br /><br />
+(10) 左の一覧（ベース環境）から&quot;サーバー&quot;を選択し、その他のソフトウェアで&quot;開発ツール&quot;を選択し、[完了]ボタンを押してください。<br />
+<img src="/images/blog/JitsiMeetonCentOS1/InstallCentOS_005.JPG" alt="Web会議システム構築"><br /><br />
+(11) 次に[ネット（ワークとホスト名）]をクリックしてください。<br /><br />
+(12) ホスト名にフルコンピュータ名を入力し、[適用]ボタンをクリックしてください。<br />
+<img src="/images/blog/JitsiMeetonCentOS1/InstallCentOS_006.JPG" alt="Web会議システム構築"><br /><br />
+(13) [設定]ボタンをクリックしてください。<br /><br />
+(14) [IPv4設定]タグにてIPアドレスなどネットワーク情報を入力し、[保存]ボタンをクリックしてください。<br />
+<img src="/images/blog/JitsiMeetonCentOS1/InstallCentOS_007.JPG" alt="Web会議システム構築"><br /><br />
+(15) [Ethernet]を&quot;オン&quot;にし、[完了]ボタンを押してください。<br /><br />
+<img src="/images/blog/JitsiMeetonCentOS1/InstallCentOS_008.JPG" alt="Web会議システム構築"><br /><br />
+(16) (7)の画面で[時刻と日付]をクリックしてください。<br /><br />
+(17) &ldquo;ntp.jst.mfeed.ad.jp&quot;を追加し、[OK]ボタンをクリックしてください。<br />
+<img src="/images/blog/JitsiMeetonCentOS1/InstallCentOS_009.JPG" alt="Web会議システム構築"><br /><br />
+(19) [地域]にて&quot;アジア&quot;を、[都市]にて&quot;東京&quot;を選択し、[完了]ボタンをクリックしてください。<br />
+<img src="/images/blog/JitsiMeetonCentOS1/InstallCentOS_010.JPG" alt="Web会議システム構築"><br /><br />
+(20) (7)の画面で[インストールの開（始）]をクリックしてください。<br /><br />
+(21) インストールが開始されます。その間にrootのパスワードを決めます。<br />
+<img src="/images/blog/JitsiMeetonCentOS1/InstallCentOS_011.JPG" alt="Web会議システム構築"><br /><br />
+(22) rootのパスワードを入力し、[完了]ボタンを押してください。<br /><br />
+(23) 次にユーザーの作成を行います。ログインID、パスワードなどのユーザー情報を入力し、[完了]ボタンを押してください。<br />
+<img src="/images/blog/JitsiMeetonCentOS1/InstallCentOS_012.JPG" alt="Web会議システム構築"><br /><br />
+(24) インストールが完了したら、[再起動]ボタンを押してください。<br />
+<img src="/images/blog/JitsiMeetonCentOS1/InstallCentOS_013.JPG" alt="Web会議システム構築"><br /><br />
+<br />
+以上でLinuxサーバの構築は終了です。</p>
     
 </div>
 
@@ -271,7 +311,7 @@
                 </li>
                 
                 <li>
-                    <a href="http://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-intoroduction/">CentOSへのJitsi Meetのインストール（序章 コロナに負けるな！））</a>
+                    <a href="http://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-intoroduction/">CentOSへのJitsi Meetのインストール（序章 コロナに負けるな！）</a>
                 </li>
                 
                 <li>

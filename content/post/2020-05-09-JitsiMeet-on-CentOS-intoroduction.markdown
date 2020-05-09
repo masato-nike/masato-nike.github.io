@@ -1,5 +1,5 @@
 ---
-title: "CentOSへのJitsi Meetのインストール（序章 コロナに負けるな！））"
+title: "CentOSへのJitsi Meetのインストール（序章 コロナに負けるな！）"
 date: 2020-05-09T12:08:20+09:00
 author: Masato Nike
 comments: true
