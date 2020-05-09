@@ -155,7 +155,7 @@ vim subjectnames.txt
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">openssl genrsa <span style="color:#ae81ff">2048</span> &gt; server.key
 openssl req -new -key server.key -subj <span style="color:#e6db74">&#34;/C=JP/ST=Some-State/O=Some-Org/CN=&lt;&lt;host名.ドメイン名&gt;&gt;&#34;</span> &gt; server.csr
 openssl x509 -days <span style="color:#ae81ff">3650</span> -req -extfile subjectnames.txt -signkey server.key &lt; server.csr &gt; server.crt
-server.crt
+more server.crt
 </code></pre></div><p>(4) server.crtの中身をコピーし、ローカルパソコン内に保存してください（ファイル名：server.crt）。<br />
 <br />
 ※オレオレサーバ証明書のクライアント（Google Chrome）へのインストール方法についてはUbuntuの時に書いた以下を参照ください。<br />
@@ -166,14 +166,14 @@ server.crt
 </code></pre></div><p><br /></p>
 <h2 id="2-jit-meetの設定と起動">2. Jit Meetの設定と起動</h2>
 <p>(1) 以下のコマンドを入力してください。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cp /etc/ssl/work/server.* ~/.jitsi-meet-cfg/web/nginx/keys/
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cp /etc/ssl/work/server.* ~/.jitsi-meet-cfg/web/keys/
 vim ~/.jitsi-meet-cfg/web/nginx/ssl.conf
 </code></pre></div><p>【編集内容】</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssl_certificate /config/keys/server.crt;
 ssl_certificate_key /config/keys/server.key;
 </code></pre></div><p>(2) 以下のコマンドを入力してください。</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd ~/docker-jitsi-meet/
-docker-compose up -D
+docker-compose up -d
 </code></pre></div><p>以上でJit Meetが起動しているはずです。<br />
 SSLサーバ証明書をインストールしたGoogleChromeでサーバにアクセスしてください。</p>
     

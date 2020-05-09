@@ -147,10 +147,40 @@
 <p>Web会議システム『Jitsi Meet』を動作させるためには、SSLサーバ証明書が必要です。<br />
 インターネット内のサーバであれば、『<a href="https://letsencrypt.org/ja/" title="Let's Encrypt">Let&rsquo;s Encrypt</a>』といった無料のSSLサーバ証明書が使えるのですが、今回はイントラネット内で利用するということが前提ですので、『Let&rsquo;s Encrypt』は使えません。<br />
 そこで、OpenSSLを使ったオレオレサーバ証明書が必要になります。<br /></p>
-
-    
-    <a href="http://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-3/" class="more">続きを読む</a>
-    
+<h2 id="1-ssl証明書の発行">1. SSL証明書の発行</h2>
+<p>(1) Jitsi Meetをインストールした仮想Linuxサーバにrootでログインし、以下のコマンドを実行してください。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mkdir /etc/ssl/work
+cd ~
+mkdir work
+cd work
+vim subjectnames.txt
+</code></pre></div><p>(2) subjectnames.txtの内容は以下を入力してください。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">subjectAltName <span style="color:#f92672">=</span> DNS:&lt;&lt;host名.ドメイン名&gt;&gt;, IP:192.168.100.10
+</code></pre></div><p>(3) 以下のコマンドを入力してください。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">openssl genrsa <span style="color:#ae81ff">2048</span> &gt; server.key
+openssl req -new -key server.key -subj <span style="color:#e6db74">&#34;/C=JP/ST=Some-State/O=Some-Org/CN=&lt;&lt;host名.ドメイン名&gt;&gt;&#34;</span> &gt; server.csr
+openssl x509 -days <span style="color:#ae81ff">3650</span> -req -extfile subjectnames.txt -signkey server.key &lt; server.csr &gt; server.crt
+more server.crt
+</code></pre></div><p>(4) server.crtの中身をコピーし、ローカルパソコン内に保存してください（ファイル名：server.crt）。<br />
+<br />
+※オレオレサーバ証明書のクライアント（Google Chrome）へのインストール方法についてはUbuntuの時に書いた以下を参照ください。<br />
+<a href="http://blog.masato-nike.net/post/2020-05-01-web-meeting-3/" title="第3回 オレオレサーバ証明書の発行～クライアントへの証明書のインストール">第3回 オレオレサーバ証明書の発行～クライアントへの証明書のインストール</a><br />
+<br />
+(5) 以下のコマンドを入力してください。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mv server.* /etc/ssl/work/
+</code></pre></div><p><br /></p>
+<h2 id="2-jit-meetの設定と起動">2. Jit Meetの設定と起動</h2>
+<p>(1) 以下のコマンドを入力してください。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cp /etc/ssl/work/server.* ~/.jitsi-meet-cfg/web/keys/
+vim ~/.jitsi-meet-cfg/web/nginx/ssl.conf
+</code></pre></div><p>【編集内容】</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssl_certificate /config/keys/server.crt;
+ssl_certificate_key /config/keys/server.key;
+</code></pre></div><p>(2) 以下のコマンドを入力してください。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd ~/docker-jitsi-meet/
+docker-compose up -d
+</code></pre></div><p>以上でJit Meetが起動しているはずです。<br />
+SSLサーバ証明書をインストールしたGoogleChromeでサーバにアクセスしてください。</p>
     
 </div>
 
@@ -229,75 +259,10 @@
 前提として、以下を実施しているものとします。<br />
 <br />
 <a href="http://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-1/" title="第1回 Linux（CentOS）サーバの構築">第1回 Linux（CentOS）サーバの構築</a><br /></p>
-<h2 id="1-sshの設定">1. SSHの設定</h2>
-<p>(1) rootでログインし、以下のコマンドを入力してください。<br /></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">firewall-cmd --add-service ssh --permanent
-</code></pre></div><p>(2) rootでのログインを拒否するように設定します。<br />
-<br />
-【コマンド】</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">vim /etc/ssh/sshd_config
-</code></pre></div><p>【編集内容】</p>
-<pre><code>PermitRootLogin no
-</code></pre><p><br />
-(3) 以下のコマンドを入力してください。<br /></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">systemctl restart sshd
-systemctl status sshd
-</code></pre></div><p>以上で、SSHの設定は終了です。<br />
-<br /></p>
-<h2 id="2-dockerのインストール">2. Dockerのインストール</h2>
-<p>(1) rootでログインし、以下のコマンドを入力してください。<br /></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">dnf -y remove podman
-dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-dnf -y install --nobest docker-ce docker-ce-cli
-dnf -y update https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.2.13-3.1.el7.x86_64.rpm
-dnf -y update docker-ce
-systemctl enable docker
-systemctl start docker
-docker version
-dnf upgrade
-firewall-cmd --add-masquerade --permanent
-firewall-cmd --reload
-</code></pre></div><p><br /></p>
-<h2 id="3-docker-composeのインストール">3. Docker Composeのインストール</h2>
-<p>(1) rootでログインし、以下のコマンドを入力してください。<br /></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">dnf -y install jq
-vim docker-compose-install.sh
-</code></pre></div><p>【編集内容】</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">compose_version<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>curl https://api.github.com/repos/docker/compose/releases/latest | jq .name -r<span style="color:#66d9ef">)</span>
-output<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;/usr/local/bin/docker-compose&#39;</span>
-curl -L https://github.com/docker/compose/releases/download/$compose_version/docker-compose-<span style="color:#66d9ef">$(</span>uname -s<span style="color:#66d9ef">)</span>-<span style="color:#66d9ef">$(</span>uname -m<span style="color:#66d9ef">)</span> -o $output
-chmod +x $output
-$output --version
-</code></pre></div><p>(2) 以下のコマンドを入力してください。<br /></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">chmod +x docker-compose-install.sh
-./docker-compose-install.sh
-</code></pre></div><p><br /></p>
-<h2 id="4-jitsi-meetのインストール">4. Jitsi Meetのインストール</h2>
-<p>(1) rootでログインし、以下のコマンドを入力してください。<br /></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone https://github.com/jitsi/docker-jitsi-meet <span style="color:#f92672">&amp;&amp;</span> cd docker-jitsi-meet
-cp env.example .env
-vim .env
-</code></pre></div><p>【編集内容】</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">CONFIG<span style="color:#f92672">=</span>/root/.jitsi-meet-cfg
 
-HTTP_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">80</span>
-
-HTTPS_PORT<span style="color:#f92672">=</span><span style="color:#ae81ff">443</span>
-
-TZ<span style="color:#f92672">=</span>Asia/Tokyo
-
-PUBLIC_URL<span style="color:#f92672">=</span>https://hostname.yourdomain
-
-ENABLE_LETSENCRYPT<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
-</code></pre></div><p>(2) 以下のコマンドを入力してください。<br /></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./gen-passwords.sh
-mkdir -p ~/.jitsi-meet-cfg/<span style="color:#f92672">{</span>web/letsencrypt,transcripts,prosody,jicofo,jvb<span style="color:#f92672">}</span>
-docker-compose pull
-</code></pre></div><p>以上で、『Jitsi Meet』のインストールは終了ですが、まだ起動はできません。<br />
-httpsでアクセスするため、SSLサーバ証明書の設定が必要になります。<br />
-SSLサーバ証明書の設定は以下に続きます。<br />
-<br />
-<a href="http://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-3/" title="第3回 オレオレサーバ証明書の発行～Jitsi Meetの設定">第3回 オレオレサーバ証明書の発行～Jitsi Meetの設定</a><br /></p>
+    
+    <a href="http://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-2/" class="more">続きを読む</a>
+    
     
 </div>
 
