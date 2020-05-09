@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hello World on ないきまさとの部屋</title>
+    <link>http://blog.masato-nike.net/tags/hello-world/</link>
+    <description>Recent content in Hello World on ないきまさとの部屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 01 May 2020 05:46:14 +0900</lastBuildDate>
+    
+	<atom:link href="http://blog.masato-nike.net/tags/hello-world/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello!Hugo</title>
+      <link>http://blog.masato-nike.net/post/2020-05-01-hello/</link>
+      <pubDate>Fri, 01 May 2020 05:46:14 +0900</pubDate>
+      
+      <guid>http://blog.masato-nike.net/post/2020-05-01-hello/</guid>
+      <description>Hello!Hugo</description>
+    </item>
+    
+    <item>
+      <title>久しぶりです!Octopress</title>
+      <link>http://blog.masato-nike.net/post/2017-10-07-hello/</link>
+      <pubDate>Sat, 07 Oct 2017 08:23:00 +0900</pubDate>
+      
+      <guid>http://blog.masato-nike.net/post/2017-10-07-hello/</guid>
+      <description>久しぶりです!Octopress</description>
+    </item>
+    
+    <item>
+      <title>Hello!Octopress</title>
+      <link>http://blog.masato-nike.net/post/2016-06-12-hello/</link>
+      <pubDate>Sun, 12 Jun 2016 06:34:46 +0900</pubDate>
+      
+      <guid>http://blog.masato-nike.net/post/2016-06-12-hello/</guid>
+      <description>Hello!Octopress</description>
+    </item>
+    
+  </channel>
+</rss>
