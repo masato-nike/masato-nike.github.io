@@ -1,5 +1,6 @@
 title = "ないきまさとの部屋"
 baseURL = "http://blog.masato-nike.net/"
+languageCode = "ja"
 theme = "bilberry-hugo-theme"
 
 # Generate the robots.txt file for SEO
