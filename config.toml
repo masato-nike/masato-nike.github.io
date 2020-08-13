@@ -1,5 +1,5 @@
 title = "ないきまさとの部屋"
-baseURL = "http://blog.masato-nike.net/"
+baseURL = "https://blog.masato-nike.net/"
 languageCode = "ja"
 theme = "bilberry-hugo-theme"
 
