@@ -10,7 +10,7 @@ enableRobotsTXT = true
 DefaultContentLanguage = "ja"
 
 # Enable / Disable Google Analytics statistics for your site
-googleAnalytics = "UA-79365305-2"
+googleAnalytics = "G-FLVBZ0FSQH"
 
 # Enable / Disable comments on the articles via Disqus.
 disqusShortname = "bilberry-hugo-theme"
@@ -57,7 +57,7 @@ pygmentsCodeFences = true
 
   # Header configuration
     # your subtitle if you want to use any
-    subtitle = "ないきまさとのブログ"
+    subtitle = "ないきまさとの部屋のブログ"
 
     # if you want to use gravatar for the header image
     gravatarEMail = "masato_nike@momo-mail.com"
@@ -123,7 +123,7 @@ pygmentsCodeFences = true
     # credits line configuration
     copyrightBy = "by Masato Nike"
     copyrightUseCurrentYear = false  # set to true to always display the current year in the copyright
-    copyrightYearOverride = "2016-2020"
+    copyrightYearOverride = "2016-2021"
     copyrightUrl = "https://www.masato-nike.net/"
     creditsText = "Bilberry Hugo Theme"
     creditsUrl = "https://github.com/Lednerb/bilberry-hugo-theme"
