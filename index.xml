@@ -226,15 +226,6 @@ FacebookのRSSを取得するには、ページアクセストークンなるも
 
 FYU.add(&#34;3e9camgo2k&#34;, &#34;fyu_3e9camgo2k&#34;);
 
-&lt;/script&gt;
-
-&lt;script async src=&#34;https://www.googletagmanager.com/gtag/js?id=G-FLVBZ0FSQH&#34;&gt;&lt;/script&gt;
-&lt;script&gt;
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag(&#39;js&#39;, new Date());
-
-  gtag(&#39;config&#39;, &#39;G-FLVBZ0FSQH&#39;);
 &lt;/script&gt;</description>
     </item>
     
