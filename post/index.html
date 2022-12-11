@@ -1,0 +1,874 @@
+<!doctype html>
+<html class="no-js" lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Masato Nike">
+    <meta name="description" content="ないきまさとの部屋のブログ">
+    <meta name="keywords" content="blog, ブログ, Octopress, Hugo, サーバ構築">
+    <meta name="generator" content="Hugo 0.108.0">
+    <title> Posts | ないきまさとの部屋</title>
+    <meta name="description" content="Posts - ないきまさとの部屋のブログ">
+    <meta itemprop="name" content="Posts">
+    <meta itemprop="description" content="Posts - ないきまさとの部屋のブログ">
+    <meta property="og:title" content="Posts">
+    <meta property="og:description" content="Posts - ないきまさとの部屋のブログ">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://blog.masato-nike.net/post/">
+    <meta property="og:site_name" content="ないきまさとの部屋"><meta property="og:type" content="website">
+
+    
+<link rel="apple-touch-icon" sizes="57x57" href="/ico/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/ico/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/ico/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/ico/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/ico/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/ico/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/ico/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/ico/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/ico/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/ico/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/ico/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/ico/favicon-16x16.png">
+<link rel="manifest" href="/ico/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ico/ms-icon-144x144.png">
+
+
+    <meta name="referrer" content="no-referrer-when-downgrade">
+
+
+    
+    <link href="/post/" rel="alternate" type="application/rss+xml" title="ないきまさとの部屋" />
+    <link href="/post/" rel="feed" type="application/rss+xml" title="ないきまさとの部屋" />
+    
+
+    
+
+    <link rel="stylesheet" href="https://blog.masato-nike.net/theme.css">
+
+    
+
+    
+    
+    
+
+    
+    <link rel="stylesheet" href="https://blog.masato-nike.net/css/custom.css">
+    
+    <link rel="stylesheet" href="https://blog.masato-nike.net/css/syntax.css">
+    
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FLVBZ0FSQH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FLVBZ0FSQH');
+</script>
+
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+        </ul>
+    </div>
+</nav>
+
+
+    
+<header>
+
+    <div class="container">
+        <div class="logo">
+            <a id="siteBaseUrl" href="/" class="logo">
+                
+                <img src="/images/MasatoNike.jpg" alt="">
+                
+
+                <span class="overlay">
+			
+	                <img src="/images/MasatoNikeOff.jpg" alt="">
+		</span>
+            </a>
+        </div>
+        <div class="titles">
+            <h3 class="title">
+		
+		<a href="https://www.masato-nike.net/">ないきまさとの部屋</a> 
+            </h3>
+            
+            <span class="subtitle">ないきまさとの部屋のブログ</span>
+            
+        </div>
+
+        
+</header>
+
+
+    <div class="main container">
+        
+    
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://blog.masato-nike.net/post/2022-12-08-long-time-no-see/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://blog.masato-nike.net/post/2022-12-08-long-time-no-see/">
+            久しぶりの更新 ～Huge環境構築～
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2022-12-08</span>
+            
+        
+
+        
+
+        
+
+        
+            <span class="author">
+                
+                
+                    <a href="https://blog.masato-nike.net/author/masato-nike/">Masato Nike</a>
+                
+            </span>
+        
+    </div>
+
+    
+        久しぶりの更新です。
+かれこれ2年ぐらい放置していたみたい。
+なぜ放置してたかというと、メインパソコンをWindows11の高速パソコンに買い替えた際に、Hugoの環境を入れていなかったため、 環境を構築するの『めんどくさいなぁ』と手つかずでした（汗）
+ということで、正常に投稿できるかわからない（涙）
+さすがに2年間も放置していると、記事を投稿するのに必要なソフトもいろいろ違ってくるようです。
+そこで、新たにHugo環境を構築する際に行ったことを3回に分けて書いていきたいと思います。
+
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://blog.masato-nike.net/tags/hugo/">Hugo</a>
+                    
+                
+                    
+                    
+                    <a href="https://blog.masato-nike.net/tags/hello-world/">Hello World</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-3/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-3/">
+            Web会議システム構築（第3回 オレオレサーバ証明書の発行～Jitsi Meetの設定）
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2020-05-09</span>
+            
+        
+
+        
+
+        
+
+        
+            <span class="author">
+                
+                
+                    <a href="https://blog.masato-nike.net/author/masato-nike/">Masato Nike</a>
+                
+            </span>
+        
+    </div>
+
+    
+        <p>本稿の前提条件として、以下が実施させているものとします。</p>
+<p><a href="http://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-1/" title="第1回 Linux（CentOS）サーバの構築">第1回 Linux（CentOS）サーバの構築</a></p>
+<p><a href="http://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-2/" title="第2回 Linux（CentOS）へのJitsi Meetのインストール">第2回 Linux（CentOS）へのJitsi Meetのインストール</a></p>
+<p>Web会議システム『Jitsi Meet』を動作させるためには、SSLサーバ証明書が必要です。<br>
+インターネット内のサーバであれば、『<a href="https://letsencrypt.org/ja/" title="Let's Encrypt">Let&rsquo;s Encrypt</a>』といった無料のSSLサーバ証明書が使えるのですが、今回はイントラネット内で利用するということが前提ですので、『Let&rsquo;s Encrypt』は使えません。<br>
+そこで、OpenSSLを使ったオレオレサーバ証明書が必要になります。</p>
+
+        
+            <a href="https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-3/" class="more">続きを読む</a>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://blog.masato-nike.net/tags/build-server/">Build Server</a>
+                    
+                
+                    
+                    
+                    <a href="https://blog.masato-nike.net/tags/linux/">Linux</a>
+                    
+                
+                    
+                    
+                    <a href="https://blog.masato-nike.net/tags/ssl/">SSL</a>
+                    
+                
+                    
+                    
+                    <a href="https://blog.masato-nike.net/tags/webmeeting/">WebMeeting</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-2/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-2/">
+            Web会議システム構築（第2回 Linux（CentOS）へのJitsi Meetのインストール）
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2020-05-09</span>
+            
+        
+
+        
+
+        
+
+        
+            <span class="author">
+                
+                
+                    <a href="https://blog.masato-nike.net/author/masato-nike/">Masato Nike</a>
+                
+            </span>
+        
+    </div>
+
+    
+        <p>Linux(CentOS)にWeb会議システム『Jitsi Meet』をインストールします。<br>
+前提として、以下を実施しているものとします。</p>
+<p><a href="http://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-1/" title="第1回 Linux（CentOS）サーバの構築">第1回 Linux（CentOS）サーバの構築</a></p>
+
+        
+            <a href="https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-2/" class="more">続きを読む</a>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://blog.masato-nike.net/tags/build-server/">Build Server</a>
+                    
+                
+                    
+                    
+                    <a href="https://blog.masato-nike.net/tags/linux/">Linux</a>
+                    
+                
+                    
+                    
+                    <a href="https://blog.masato-nike.net/tags/webmeeting/">WebMeeting</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-1/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-1/">
+            Web会議システム構築（第1回 Linux（CentOS）サーバの構築）
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2020-05-09</span>
+            
+        
+
+        
+
+        
+
+        
+            <span class="author">
+                
+                
+                    <a href="https://blog.masato-nike.net/author/masato-nike/">Masato Nike</a>
+                
+            </span>
+        
+    </div>
+
+    
+        <p>以下のソフトウェアをWindows10にインストールしました（2020年4月30日現在最新？）</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">ソフトウェア</th>
+<th style="text-align:center">バージョン</th>
+<th style="text-align:right">入手先</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">VirtualBox</td>
+<td style="text-align:center">6.1.6-137129</td>
+<td style="text-align:right"><a href="https://www.virtualbox.org/wiki/Downloads" title="Downloads – Oracle VM VirtualBox">Downloads – Oracle VM VirtualBox</a></td>
+</tr>
+<tr>
+<td style="text-align:left">CentOS</td>
+<td style="text-align:center">8.1.1911</td>
+<td style="text-align:right"><a href="https://www.centos.org/download/" title="Download CentOS">Download CentOS</a></td>
+</tr>
+</tbody>
+</table>
+<p>それぞれ自分の環境にあったものをダウンロードしてください。</p>
+
+        
+            <a href="https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-1/" class="more">続きを読む</a>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://blog.masato-nike.net/tags/build-server/">Build Server</a>
+                    
+                
+                    
+                    
+                    <a href="https://blog.masato-nike.net/tags/linux/">Linux</a>
+                    
+                
+                    
+                    
+                    <a href="https://blog.masato-nike.net/tags/webmeeting/">WebMeeting</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-intoroduction/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-intoroduction/">
+            CentOSへのJitsi Meetのインストール（序章 コロナに負けるな！）
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2020-05-09</span>
+            
+        
+
+        
+
+        
+
+        
+            <span class="author">
+                
+                
+                    <a href="https://blog.masato-nike.net/author/masato-nike/">Masato Nike</a>
+                
+            </span>
+        
+    </div>
+
+    
+        <p>UbuntuへのオープンソースのWeb会議システム『Jitsi Meet』のインストールを紹介してきましたが、CentOSでできないものかと調べてみたので書いておく。<br>
+CentOSへの『Jitsi Meet』の対応はRPMが2017年2月7日以降更新されていない状況です(2020年5月9日現在)。<br>
+なので、セキュリティとかバグとかもろもろの観点から、CentOSへの『Jitsi Meet』のインストールはあまりお勧めできません<br>
+それでも、もろもろの事情でCentOSを利用しなきゃならないこともあると思うので、3回に分けて記述していきたいと思います。</p>
+
+        
+            <a href="https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-intoroduction/" class="more">続きを読む</a>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://blog.masato-nike.net/tags/covid-19/">COVID-19</a>
+                    
+                
+                    
+                    
+                    <a href="https://blog.masato-nike.net/tags/build-server/">Build Server</a>
+                    
+                
+                    
+                    
+                    <a href="https://blog.masato-nike.net/tags/linux/">Linux</a>
+                    
+                
+                    
+                    
+                    <a href="https://blog.masato-nike.net/tags/webmeeting/">WebMeeting</a>
+                    
+                
+                    
+                    
+                    <a href="https://blog.masato-nike.net/tags/ssl/">SSL</a>
+                    
+                
+                    
+                    
+                    <a href="https://blog.masato-nike.net/tags/webmeeting/">WebMeeting</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://blog.masato-nike.net/post/2020-05-07-chromeremotedesktop/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://blog.masato-nike.net/post/2020-05-07-chromeremotedesktop/">
+            Google Chrome Remote Desktop Webのインストール
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2020-05-07</span>
+            
+        
+
+        
+
+        
+
+        
+            <span class="author">
+                
+                
+                    <a href="https://blog.masato-nike.net/author/masato-nike/">Masato Nike</a>
+                
+            </span>
+        
+    </div>
+
+    
+        <p>新型コロナウイルスの影響で、自宅から会社や友人宅のパソコンを操作したいなという機会が増えたので、Google Chromeの拡張機能であるリモートデスクトップのインストール方法を覚書代わりに書いておきます。</p>
+
+        
+            <a href="https://blog.masato-nike.net/post/2020-05-07-chromeremotedesktop/" class="more">続きを読む</a>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://blog.masato-nike.net/tags/windows/">Windows</a>
+                    
+                
+                    
+                    
+                    <a href="https://blog.masato-nike.net/tags/remote/">Remote</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://blog.masato-nike.net/post/2020-05-06-windows10-auto-login/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://blog.masato-nike.net/post/2020-05-06-windows10-auto-login/">
+            Windows10 で自動ログインさせる方法
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2020-05-06</span>
+            
+        
+
+        
+
+        
+
+        
+            <span class="author">
+                
+                
+                    <a href="https://blog.masato-nike.net/author/masato-nike/">Masato Nike</a>
+                
+            </span>
+        
+    </div>
+
+    
+        Windows10で自動ログインさせるためのコマンドを備忘録替わりに書いておきます。
+netplwiz 
+
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://blog.masato-nike.net/tags/windows/">Windows</a>
+                    
+                
+                    
+                    
+                    <a href="https://blog.masato-nike.net/tags/command/">Command</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+
+    
+    <div class="paginator">
+        
+            <a href="/post/page/2/" class="older"><i class="fa fa-angle-double-left"></i> 過去の投稿</a>
+        
+
+        
+    </div>
+
+
+
+    </div>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>最近の投稿</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://blog.masato-nike.net/post/2022-12-08-long-time-no-see/">久しぶりの更新 ～Huge環境構築～</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-3/">Web会議システム構築（第3回 オレオレサーバ証明書の発行～Jitsi Meetの設定）</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-2/">Web会議システム構築（第2回 Linux（CentOS）へのJitsi Meetのインストール）</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-1/">Web会議システム構築（第1回 Linux（CentOS）サーバの構築）</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-intoroduction/">CentOSへのJitsi Meetのインストール（序章 コロナに負けるな！）</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://blog.masato-nike.net/post/2020-05-07-chromeremotedesktop/">Google Chrome Remote Desktop Webのインストール</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://blog.masato-nike.net/post/2020-05-06-windows10-auto-login/">Windows10 で自動ログインさせる方法</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+
+        <div class="right">
+            
+            <div class="external-profiles">
+                <strong>ソーシャルメディア</strong>
+
+                
+                <a href="https://twitter.com/masato_nike" target="_blank" rel=""><em class="fab fa-twitter"></em></a>
+                
+                <a href="https://www.instagram.com/z_masato_nike/" target="_blank" rel=""><em class="fab fa-instagram"></em></a>
+                
+            </div>
+            
+
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://www.masato-nike.net/" target="_blank">
+                &copy;
+                
+                2016-2022
+                
+                by Masato Nike
+            </a>
+            -
+            <a href="https://blog.masato-nike.net/post/index.xml">RSS</a>
+        </div>
+        <div class="author">
+            <a href="https://github.com/Lednerb/bilberry-hugo-theme"
+                target="_blank">Bilberry Hugo Theme</a>
+        </div>
+    </div>
+</div>
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-79365305-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    
+
+
+    <script type="text/javascript" src="https://blog.masato-nike.net/theme.js"></script>
+
+    
+    
+    
+
+    
+    <div id="activate-algolia-search" class="hidden">
+  <input type="hidden" id="algolia-search-appId" value="45CEN6X6AT">
+  <input type="hidden" id="algolia-search-apiKey" value="16030625f1a4d0dd3b8aefd794fd4cf1">
+  <input type="hidden" id="algolia-search-indexName" value="bilberry-hugo-theme">
+  <input type="hidden" id="algolia-search-noSearchResults" value="検索結果がありません.">
+
+  
+  <input type="hidden" id="algolia-search-currentLanguageOnly">
+  
+</div>
+
+    
+
+
+</body>
+
+</html>

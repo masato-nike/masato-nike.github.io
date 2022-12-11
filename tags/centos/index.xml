@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CentOS on ないきまさとの部屋</title>
+    <link>https://blog.masato-nike.net/tags/centos/</link>
+    <description>Recent content in CentOS on ないきまさとの部屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 21 Jun 2016 05:38:10 +0900</lastBuildDate><atom:link href="https://blog.masato-nike.net/tags/centos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>さくらインターネットでサーバ構築②</title>
+      <link>https://blog.masato-nike.net/post/2016-06-21-buildserverdns/</link>
+      <pubDate>Tue, 21 Jun 2016 05:38:10 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2016-06-21-buildserverdns/</guid>
+      <description>&lt;p&gt;今回はDNSサーバの構築について書こうと思いますが、
+タイトルには『さくらインターネット』と書いていますが、
+今回、さくらインターネットでドメインを取得しなかったため、
+さくらインターネットはあまり関係ないです。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>さくらインターネットでサーバ構築①</title>
+      <link>https://blog.masato-nike.net/post/2016-06-15-buildserver/</link>
+      <pubDate>Wed, 15 Jun 2016 15:46:36 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2016-06-15-buildserver/</guid>
+      <description>&lt;p&gt;ひとこと、ふたことつぶやいていたけど、そろそろブログらしいことを書こうと思う。&lt;br&gt;
+いままではブログだのホームページだのは&lt;a href=&#34;http://geocities.yahoo.co.jp/&#34; title=&#34;Yahoo!ジオシティーズ&#34;&gt;Yahoo!ジオシティーズ&lt;/a&gt;や&lt;a href=&#34;http://www.ameba.jp/&#34; title=&#34;アメブロ&#34;&gt;アメブロ&lt;/a&gt;を使用していたのだが、Ruby on Railsとかのページを作ってみたいし、どうせならブログもコードとかをきちんと書けるものが欲しいな。と思っていたので、今回はじめてレンタルサーバ(VPS)というものを借りることにした。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Octopressを導入してみた</title>
+      <link>https://blog.masato-nike.net/post/2016-06-15-octopress/</link>
+      <pubDate>Wed, 15 Jun 2016 06:00:44 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2016-06-15-octopress/</guid>
+      <description>以下のサイトを参考にさせてもらい、Octopressを導入してみた。
+エンジニアのブログは Octopress が最適 - do blog</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Command on ないきまさとの部屋</title>
+    <link>https://blog.masato-nike.net/tags/command/</link>
+    <description>Recent content in Command on ないきまさとの部屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 06 May 2020 17:30:01 +0900</lastBuildDate><atom:link href="https://blog.masato-nike.net/tags/command/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows10 で自動ログインさせる方法</title>
+      <link>https://blog.masato-nike.net/post/2020-05-06-windows10-auto-login/</link>
+      <pubDate>Wed, 06 May 2020 17:30:01 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2020-05-06-windows10-auto-login/</guid>
+      <description>Windows10で自動ログインさせるためのコマンドを備忘録替わりに書いておきます。
+netplwiz </description>
+    </item>
+    
+  </channel>
+</rss>

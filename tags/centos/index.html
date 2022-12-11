@@ -1,0 +1,493 @@
+<!doctype html>
+<html class="no-js" lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Masato Nike">
+    <meta name="description" content="ないきまさとの部屋のブログ">
+    <meta name="keywords" content="blog, ブログ, Octopress, Hugo, サーバ構築">
+    <meta name="generator" content="Hugo 0.108.0">
+    <title> CentOS | ないきまさとの部屋</title>
+    <meta name="description" content="CentOS - ないきまさとの部屋のブログ">
+    <meta itemprop="name" content="CentOS">
+    <meta itemprop="description" content="CentOS - ないきまさとの部屋のブログ">
+    <meta property="og:title" content="CentOS">
+    <meta property="og:description" content="CentOS - ないきまさとの部屋のブログ">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://blog.masato-nike.net/tags/centos/">
+    <meta property="og:site_name" content="ないきまさとの部屋"><meta property="og:type" content="website">
+
+    
+<link rel="apple-touch-icon" sizes="57x57" href="/ico/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/ico/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/ico/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/ico/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/ico/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/ico/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/ico/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/ico/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/ico/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/ico/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/ico/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/ico/favicon-16x16.png">
+<link rel="manifest" href="/ico/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ico/ms-icon-144x144.png">
+
+
+    <meta name="referrer" content="no-referrer-when-downgrade">
+
+
+    
+    <link href="/tags/centos/" rel="alternate" type="application/rss+xml" title="ないきまさとの部屋" />
+    <link href="/tags/centos/" rel="feed" type="application/rss+xml" title="ないきまさとの部屋" />
+    
+
+    
+
+    <link rel="stylesheet" href="https://blog.masato-nike.net/theme.css">
+
+    
+
+    
+    
+    
+
+    
+    <link rel="stylesheet" href="https://blog.masato-nike.net/css/custom.css">
+    
+    <link rel="stylesheet" href="https://blog.masato-nike.net/css/syntax.css">
+    
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FLVBZ0FSQH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FLVBZ0FSQH');
+</script>
+
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+        </ul>
+    </div>
+</nav>
+
+
+    
+<header>
+
+    <div class="container">
+        <div class="logo">
+            <a id="siteBaseUrl" href="/" class="logo">
+                
+                <img src="/images/MasatoNike.jpg" alt="">
+                
+
+                <span class="overlay">
+			
+	                <img src="/images/MasatoNikeOff.jpg" alt="">
+		</span>
+            </a>
+        </div>
+        <div class="titles">
+            <h3 class="title">
+		
+		<a href="https://www.masato-nike.net/">ないきまさとの部屋</a> 
+            </h3>
+            
+            <span class="subtitle">ないきまさとの部屋のブログ</span>
+            
+        </div>
+
+        
+</header>
+
+
+    <div class="main container">
+        
+    
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://blog.masato-nike.net/post/2016-06-21-buildserverdns/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://blog.masato-nike.net/post/2016-06-21-buildserverdns/">
+            さくらインターネットでサーバ構築②
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2016-06-21</span>
+            
+        
+
+        
+
+        
+
+        
+            <span class="author">
+                
+                
+                    <a href="https://blog.masato-nike.net/author/masato-nike/">Masato Nike</a>
+                
+            </span>
+        
+    </div>
+
+    
+        <p>今回はDNSサーバの構築について書こうと思いますが、
+タイトルには『さくらインターネット』と書いていますが、
+今回、さくらインターネットでドメインを取得しなかったため、
+さくらインターネットはあまり関係ないです。</p>
+
+        
+            <a href="https://blog.masato-nike.net/post/2016-06-21-buildserverdns/" class="more">続きを読む</a>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://blog.masato-nike.net/tags/build-server/">Build Server</a>
+                    
+                
+                    
+                    
+                    <a href="https://blog.masato-nike.net/tags/centos/">CentOS</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://blog.masato-nike.net/post/2016-06-15-buildserver/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://blog.masato-nike.net/post/2016-06-15-buildserver/">
+            さくらインターネットでサーバ構築①
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2016-06-15</span>
+            
+        
+
+        
+
+        
+
+        
+            <span class="author">
+                
+                
+                    <a href="https://blog.masato-nike.net/author/masato-nike/">Masato Nike</a>
+                
+            </span>
+        
+    </div>
+
+    
+        <p>ひとこと、ふたことつぶやいていたけど、そろそろブログらしいことを書こうと思う。<br>
+いままではブログだのホームページだのは<a href="http://geocities.yahoo.co.jp/" title="Yahoo!ジオシティーズ">Yahoo!ジオシティーズ</a>や<a href="http://www.ameba.jp/" title="アメブロ">アメブロ</a>を使用していたのだが、Ruby on Railsとかのページを作ってみたいし、どうせならブログもコードとかをきちんと書けるものが欲しいな。と思っていたので、今回はじめてレンタルサーバ(VPS)というものを借りることにした。</p>
+
+        
+            <a href="https://blog.masato-nike.net/post/2016-06-15-buildserver/" class="more">続きを読む</a>
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://blog.masato-nike.net/tags/build-server/">Build Server</a>
+                    
+                
+                    
+                    
+                    <a href="https://blog.masato-nike.net/tags/centos/">CentOS</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+        <div class="article-wrapper u-cf">
+            
+                <a class="bubble" href="https://blog.masato-nike.net/post/2016-06-15-octopress/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://blog.masato-nike.net/post/2016-06-15-octopress/">
+            Octopressを導入してみた
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2016-06-15</span>
+            
+        
+
+        
+
+        
+
+        
+            <span class="author">
+                
+                
+                    <a href="https://blog.masato-nike.net/author/masato-nike/">Masato Nike</a>
+                
+            </span>
+        
+    </div>
+
+    
+        以下のサイトを参考にさせてもらい、Octopressを導入してみた。
+エンジニアのブログは Octopress が最適 - do blog
+
+        
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://blog.masato-nike.net/tags/octopress/">Octopress</a>
+                    
+                
+                    
+                    
+                    <a href="https://blog.masato-nike.net/tags/centos/">CentOS</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+            
+        </div>
+    
+
+    
+    <div class="paginator">
+        
+
+        
+    </div>
+
+
+
+    </div>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>最近の投稿</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://blog.masato-nike.net/post/2022-12-08-long-time-no-see/">久しぶりの更新 ～Huge環境構築～</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-3/">Web会議システム構築（第3回 オレオレサーバ証明書の発行～Jitsi Meetの設定）</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-2/">Web会議システム構築（第2回 Linux（CentOS）へのJitsi Meetのインストール）</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-1/">Web会議システム構築（第1回 Linux（CentOS）サーバの構築）</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-intoroduction/">CentOSへのJitsi Meetのインストール（序章 コロナに負けるな！）</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://blog.masato-nike.net/post/2020-05-07-chromeremotedesktop/">Google Chrome Remote Desktop Webのインストール</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://blog.masato-nike.net/post/2020-05-06-windows10-auto-login/">Windows10 で自動ログインさせる方法</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+
+        <div class="right">
+            
+            <div class="external-profiles">
+                <strong>ソーシャルメディア</strong>
+
+                
+                <a href="https://twitter.com/masato_nike" target="_blank" rel=""><em class="fab fa-twitter"></em></a>
+                
+                <a href="https://www.instagram.com/z_masato_nike/" target="_blank" rel=""><em class="fab fa-instagram"></em></a>
+                
+            </div>
+            
+
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://www.masato-nike.net/" target="_blank">
+                &copy;
+                
+                2016-2022
+                
+                by Masato Nike
+            </a>
+            -
+            <a href="https://blog.masato-nike.net/tags/centos/index.xml">RSS</a>
+        </div>
+        <div class="author">
+            <a href="https://github.com/Lednerb/bilberry-hugo-theme"
+                target="_blank">Bilberry Hugo Theme</a>
+        </div>
+    </div>
+</div>
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-79365305-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    
+
+
+    <script type="text/javascript" src="https://blog.masato-nike.net/theme.js"></script>
+
+    
+    
+    
+
+    
+    <div id="activate-algolia-search" class="hidden">
+  <input type="hidden" id="algolia-search-appId" value="45CEN6X6AT">
+  <input type="hidden" id="algolia-search-apiKey" value="16030625f1a4d0dd3b8aefd794fd4cf1">
+  <input type="hidden" id="algolia-search-indexName" value="bilberry-hugo-theme">
+  <input type="hidden" id="algolia-search-noSearchResults" value="検索結果がありません.">
+
+  
+  <input type="hidden" id="algolia-search-currentLanguageOnly">
+  
+</div>
+
+    
+
+
+</body>
+
+</html>

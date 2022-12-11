@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SmartPhoneAppli on ないきまさとの部屋</title>
+    <link>https://blog.masato-nike.net/tags/smartphoneappli/</link>
+    <description>Recent content in SmartPhoneAppli on ないきまさとの部屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 01 May 2020 19:11:24 +0900</lastBuildDate><atom:link href="https://blog.masato-nike.net/tags/smartphoneappli/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Web会議システム構築（第4回 スマホのカメラでWeb会議）</title>
+      <link>https://blog.masato-nike.net/post/2020-05-01-web-meeting-4/</link>
+      <pubDate>Fri, 01 May 2020 19:11:24 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2020-05-01-web-meeting-4/</guid>
+      <description>&lt;p&gt;2020年5月1日現在、新型コロナウイルスの影響で、テレワークによる作業が多くなっているせいか、Webカメラが品薄状態となっています。&lt;br&gt;
+Webカメラがないのでは、せっかく『Jitsi Meet』でWebシステムを構築したとしても使い物になりません。&lt;br&gt;
+そこで注目したのがスマートフォンに搭載されているカメラをWebカメラの代わりにできないかということです。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Fyuseというアプリ</title>
+      <link>https://blog.masato-nike.net/post/2017-10-07-fyuse/</link>
+      <pubDate>Sat, 07 Oct 2017 15:31:13 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2017-10-07-fyuse/</guid>
+      <description>&lt;p&gt;仕事で、ホームページ上で商品紹介をするにあたって、商品の全体画像が欲しくて、いい感じに撮影できないか、あれこれググっていたら、『Fyuse』なるアプリを発見した！&lt;br&gt;
+なにはともあれ、『Fyuse』で撮影した写真を、マウスを動かしながら見てほしい。&lt;/p&gt;
+&lt;div id=&#34;fyu_3e9camgo2k&#34; class=&#34;fyu_container fyu_vertical&#34; style=&#34;margin:auto&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;script src=&#34;https://fyu.se/embed?v=3.0&#34;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+
+FYU.add(&#34;3e9camgo2k&#34;, &#34;fyu_3e9camgo2k&#34;);
+
+&lt;/script&gt;
+
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

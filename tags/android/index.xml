@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Android on ないきまさとの部屋</title>
+    <link>https://blog.masato-nike.net/tags/android/</link>
+    <description>Recent content in Android on ないきまさとの部屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 01 May 2020 19:11:24 +0900</lastBuildDate><atom:link href="https://blog.masato-nike.net/tags/android/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Web会議システム構築（第4回 スマホのカメラでWeb会議）</title>
+      <link>https://blog.masato-nike.net/post/2020-05-01-web-meeting-4/</link>
+      <pubDate>Fri, 01 May 2020 19:11:24 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2020-05-01-web-meeting-4/</guid>
+      <description>&lt;p&gt;2020年5月1日現在、新型コロナウイルスの影響で、テレワークによる作業が多くなっているせいか、Webカメラが品薄状態となっています。&lt;br&gt;
+Webカメラがないのでは、せっかく『Jitsi Meet』でWebシステムを構築したとしても使い物になりません。&lt;br&gt;
+そこで注目したのがスマートフォンに搭載されているカメラをWebカメラの代わりにできないかということです。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

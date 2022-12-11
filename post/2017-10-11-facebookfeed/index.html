@@ -1,0 +1,434 @@
+<!doctype html>
+<html class="no-js" lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Masato Nike">
+    <meta name="description" content="ないきまさとの部屋のブログ">
+    <meta name="keywords" content="blog, ブログ, Octopress, Hugo, サーバ構築">
+    <meta name="generator" content="Hugo 0.108.0">
+    <title> FacebookのRSSを取得する（永久ページアクセストークンの取得） | ないきまさとの部屋</title>
+    <meta name="description" content="FacebookのRSSを取得する（永久ページアクセストークンの取得） - ないきまさとの部屋のブログ">
+    <meta itemprop="name" content="FacebookのRSSを取得する（永久ページアクセストークンの取得）">
+    <meta itemprop="description" content="FacebookのRSSを取得する（永久ページアクセストークンの取得） - ないきまさとの部屋のブログ">
+    <meta property="og:title" content="FacebookのRSSを取得する（永久ページアクセストークンの取得）">
+    <meta property="og:description" content="FacebookのRSSを取得する（永久ページアクセストークンの取得） - ないきまさとの部屋のブログ">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://blog.masato-nike.net/post/2017-10-11-facebookfeed/">
+    <meta property="og:site_name" content="ないきまさとの部屋">
+    <meta property="og:type" content="article">
+
+    
+<link rel="apple-touch-icon" sizes="57x57" href="/ico/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/ico/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/ico/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/ico/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/ico/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/ico/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/ico/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/ico/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/ico/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/ico/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/ico/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/ico/favicon-16x16.png">
+<link rel="manifest" href="/ico/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ico/ms-icon-144x144.png">
+
+
+    <meta name="referrer" content="no-referrer-when-downgrade">
+
+
+    
+    <link href="/post/2017-10-11-facebookfeed/" rel="alternate" type="application/rss+xml" title="ないきまさとの部屋" />
+    <link href="/post/2017-10-11-facebookfeed/" rel="feed" type="application/rss+xml" title="ないきまさとの部屋" />
+    
+
+    
+
+    <link rel="stylesheet" href="https://blog.masato-nike.net/theme.css">
+
+    
+
+    
+    
+    
+
+    
+    <link rel="stylesheet" href="https://blog.masato-nike.net/css/custom.css">
+    
+    <link rel="stylesheet" href="https://blog.masato-nike.net/css/syntax.css">
+    
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FLVBZ0FSQH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FLVBZ0FSQH');
+</script>
+
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+        </ul>
+    </div>
+</nav>
+
+
+    
+<header>
+
+    <div class="container">
+        <div class="logo">
+            <a id="siteBaseUrl" href="/" class="logo">
+                
+                <img src="/images/MasatoNike.jpg" alt="">
+                
+
+                <span class="overlay">
+			
+	                <img src="/images/MasatoNikeOff.jpg" alt="">
+		</span>
+            </a>
+        </div>
+        <div class="titles">
+            <h3 class="title">
+		
+		<a href="https://www.masato-nike.net/">ないきまさとの部屋</a> 
+            </h3>
+            
+            <span class="subtitle">ないきまさとの部屋のブログ</span>
+            
+        </div>
+
+        
+</header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://blog.masato-nike.net/post/2017-10-11-facebookfeed/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://blog.masato-nike.net/post/2017-10-11-facebookfeed/">
+            FacebookのRSSを取得する（永久ページアクセストークンの取得）
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2017-10-11</span>
+            
+        
+
+        
+
+        
+
+        
+            <span class="author">
+                
+                
+                    <a href="https://blog.masato-nike.net/author/masato-nike/">Masato Nike</a>
+                
+            </span>
+        
+    </div>
+
+    
+        
+
+        <p>FacebookのRSSを取得し、自分のホームページのTOPICSにしたいなぁと考えた次第です。<br>
+FacebookのRSSを取得するには、ページアクセストークンなるものが必要なのですが、通常の方法だと、有効期限が1時間以内のアクセストークンが取得できません。<br>
+それだといくらRSSを取得できても、ホームページのTOPICSに使用するには有効期限が短すぎます。
+そこで、永久的なアクセストークンを取得できないかと、いろいろぐぐってみたわけです。</p>
+<p>以下に私が調査した方法（2017年10月11日時点）を記しておきます。</p>
+<p>##　1. （事前準備）アプリ登録およびアプリ情報の取得</p>
+<p>Facebookにログインし、アプリ管理をクリックします。</p>
+<p><img src="/images/blog/2017/10/11/facebookfeed_001.jpg" alt="アプリ管理"></p>
+<p>[新しいアプリを作成]ボタンをクリックしてください。</p>
+<p><img src="/images/blog/2017/10/11/facebookfeed_002.jpg" alt="新しいアプリを作成"></p>
+<p>表示されたダイアログで、アプリの表示名を入力します。</p>
+<p><img src="/images/blog/2017/10/11/facebookfeed_003.jpg" alt="アプリの表示名"></p>
+<p>セキュリティチェックを行い、送信ボタンをクリックします。
+これでアプリが作成されるはずです。</p>
+<p>[設定]―[ベーシック]を表示し、『アプリID』と『app secret』をメモしておいてください。</p>
+<p><img src="/images/blog/2017/10/11/facebookfeed_004.jpg" alt="アプリ情報"></p>
+<h2 id="2-ユーザアクセストークンの取得">2. ユーザアクセストークンの取得</h2>
+<p>グラフAPIエクスプローラ <a href="https://developers.facebook.com/tools/explorer/145634995501895/">https://developers.facebook.com/tools/explorer/145634995501895/</a> にアクセスします。</p>
+<p>アプリにて、作成したアプリを選択します。</p>
+<p><img src="/images/blog/2017/10/11/facebookfeed_005.jpg" alt="アプリ選択"></p>
+<p>トークンを取得かから、[ユーザアクセストークンを取得]を選択します。</p>
+<p><img src="/images/blog/2017/10/11/facebookfeed_006.jpg" alt="ユーザアクセストークンを選択"></p>
+<p>manage_pages　にチェックを入れ、アクセストークンを取得します。</p>
+<p><img src="/images/blog/2017/10/11/facebookfeed_007.jpg" alt="権限付与"></p>
+<p>Facebookでログインダイアログが表示されるので、ログインしてください。</p>
+<p><img src="/images/blog/2017/10/11/facebookfeed_008.jpg" alt="ログイン認証"></p>
+<p>ログインしたダイアログにアクセストークンがコールバックされるので、メモしてください（UUU1H）。</p>
+<p><img src="/images/blog/2017/10/11/facebookfeed_009.jpg" alt="ユーザアクセストークン"></p>
+<!-- raw HTML omitted -->
+<h2 id="3-ユーザアクセストークンの延長">3. ユーザアクセストークンの延長</h2>
+<p>[ツール＆サポート]をクリックしてください。</p>
+<p><img src="/images/blog/2017/10/11/facebookfeed_010.jpg" alt="ツール＆サポート"></p>
+<p>アクセストークンツールをクリックしてくだい。</p>
+<p><img src="/images/blog/2017/10/11/facebookfeed_011.jpg" alt="アクセストークンツール"></p>
+<p>[User Token]のデバッグを実施します。</p>
+<p><img src="/images/blog/2017/10/11/facebookfeed_012.jpg" alt="User Token"></p>
+<p>アクセストークンツールにて、アクセストークンUUU1Hをコピペし、デバッグを実施してください。</p>
+<p><img src="/images/blog/2017/10/11/facebookfeed_013.jpg" alt="ユーザアクセストークン"></p>
+<p>アクセストークンを延長してください。</p>
+<p><img src="/images/blog/2017/10/11/facebookfeed_014.jpg" alt="ユーザアクセストークンの延長"></p>
+<p>表示されたアクセストークンをメモしてください（UUU2M）。</p>
+<h2 id="4-無期限ユーザアクセストークンの取得">4. 無期限ユーザアクセストークンの取得</h2>
+<!-- raw HTML omitted -->
+<p>にアクセスしてください。
+JSONファイルがダウンロードもしくは表示されるので、保存してください。</p>
+<!-- raw HTML omitted -->
+<h2 id="5-無期限ページアクセストークンの取得">5. 無期限ページアクセストークンの取得</h2>
+<pre tabindex="0"><code>https://graph.facebook.com/me/accounts?access_token=UUU8
+</code></pre><p>にアクセスしてください。
+JSONファイルがダウンロードもしくは表示されるので、保存してください。</p>
+<pre tabindex="0"><code>{
+   &#34;data&#34;: [
+      {
+         &#34;access_token&#34;: &#34;PPP8&#34;,
+         &#34;category&#34;: &#34;Community&#34;,
+         &#34;name&#34;: &#34;hogehoge&#34;,
+         &#34;id&#34;: &#34;pegepge&#34;,
+         &#34;perms&#34;: [
+            &#34;ADMINISTER&#34;,
+            &#34;EDIT_PROFILE&#34;,
+            &#34;CREATE_CONTENT&#34;,
+            &#34;MODERATE_CONTENT&#34;,
+            &#34;CREATE_ADS&#34;,
+            &#34;BASIC_ADMIN&#34;
+         ]
+      }
+   ],
+   &#34;paging&#34;: {
+      &#34;cursors&#34;: {
+         &#34;before&#34;: &#34;guhaguha&#34;,
+         &#34;after&#34;: &#34;haguhagu&#34;
+      }
+   }
+}
+</code></pre><p>アクセストークンデバッガーにて、上記アクセストークン（PPP8）を入力し、デバッグを実行してください。
+有効期限が受け取らないになっていることを確認してください。</p>
+<p><img src="/images/blog/2017/10/11/facebookfeed_015.jpg" alt="無期限ページアクセストークン"></p>
+<h2 id="6-facebookページのrssを取得">6. FacebookページのRSSを取得</h2>
+<p>Facebookページの[ページ情報]に記されている『ページID』をメモしてください。
+ブラウザやJavascriptを用い、以下のアドレスにアクセスするとFacebookページのRSSが取得できます。</p>
+<pre tabindex="0"><code>https://graph.facebook.com/v2.10/&lt;ページID&gt;/feed?fields=created_time%2Cmessage&amp;access_token=PPP8
+</code></pre>
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://blog.masato-nike.net/tags/makeuphomepage/">MakeupHomePage</a>
+                    
+                
+                    
+                    
+                    <a href="https://blog.masato-nike.net/tags/facebook/">Facebook</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        <div id="comments-container">
+            <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bilberry-hugo-theme" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            
+
+            
+
+            
+
+        </div>
+    
+
+    </div>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>最近の投稿</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://blog.masato-nike.net/post/2022-12-08-long-time-no-see/">久しぶりの更新 ～Huge環境構築～</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-3/">Web会議システム構築（第3回 オレオレサーバ証明書の発行～Jitsi Meetの設定）</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-2/">Web会議システム構築（第2回 Linux（CentOS）へのJitsi Meetのインストール）</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-1/">Web会議システム構築（第1回 Linux（CentOS）サーバの構築）</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-intoroduction/">CentOSへのJitsi Meetのインストール（序章 コロナに負けるな！）</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://blog.masato-nike.net/post/2020-05-07-chromeremotedesktop/">Google Chrome Remote Desktop Webのインストール</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://blog.masato-nike.net/post/2020-05-06-windows10-auto-login/">Windows10 で自動ログインさせる方法</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+
+        <div class="right">
+            
+            <div class="external-profiles">
+                <strong>ソーシャルメディア</strong>
+
+                
+                <a href="https://twitter.com/masato_nike" target="_blank" rel=""><em class="fab fa-twitter"></em></a>
+                
+                <a href="https://www.instagram.com/z_masato_nike/" target="_blank" rel=""><em class="fab fa-instagram"></em></a>
+                
+            </div>
+            
+
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://www.masato-nike.net/" target="_blank">
+                &copy;
+                
+                2016-2022
+                
+                by Masato Nike
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://github.com/Lednerb/bilberry-hugo-theme"
+                target="_blank">Bilberry Hugo Theme</a>
+        </div>
+    </div>
+</div>
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-79365305-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    
+
+
+    <script type="text/javascript" src="https://blog.masato-nike.net/theme.js"></script>
+
+    
+    
+    
+
+    
+    <div id="activate-algolia-search" class="hidden">
+  <input type="hidden" id="algolia-search-appId" value="45CEN6X6AT">
+  <input type="hidden" id="algolia-search-apiKey" value="16030625f1a4d0dd3b8aefd794fd4cf1">
+  <input type="hidden" id="algolia-search-indexName" value="bilberry-hugo-theme">
+  <input type="hidden" id="algolia-search-noSearchResults" value="検索結果がありません.">
+
+  
+  <input type="hidden" id="algolia-search-currentLanguageOnly">
+  
+</div>
+
+    
+
+
+</body>
+
+</html>

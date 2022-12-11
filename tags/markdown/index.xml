@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markdown on ないきまさとの部屋</title>
+    <link>https://blog.masato-nike.net/tags/markdown/</link>
+    <description>Recent content in Markdown on ないきまさとの部屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 16 Jun 2016 10:52:50 +0900</lastBuildDate><atom:link href="https://blog.masato-nike.net/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Octopressで表を挿入する</title>
+      <link>https://blog.masato-nike.net/post/2016-06-16-octopress/</link>
+      <pubDate>Thu, 16 Jun 2016 10:52:50 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2016-06-16-octopress/</guid>
+      <description>&lt;p&gt;昨日の投稿で表を入れようとして、少しはまったので、メモ代わりに書いておきます。&lt;/p&gt;
+&lt;h2 id=&#34;1-表の作り方&#34;&gt;1. 表の作り方&lt;/h2&gt;
+&lt;p&gt;Markdownでの表の作り方は簡単で、以下のようにすれば、それぞれ左寄せ、中央寄せ、右寄せになります。&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

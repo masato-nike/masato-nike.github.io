@@ -1,0 +1,384 @@
+<!doctype html>
+<html class="no-js" lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Masato Nike">
+    <meta name="description" content="ないきまさとの部屋のブログ">
+    <meta name="keywords" content="blog, ブログ, Octopress, Hugo, サーバ構築">
+    <meta name="generator" content="Hugo 0.108.0">
+    <title> Web会議システム構築（第4回 スマホのカメラでWeb会議） | ないきまさとの部屋</title>
+    <meta name="description" content="Web会議システム構築（第4回 スマホのカメラでWeb会議） - ないきまさとの部屋のブログ">
+    <meta itemprop="name" content="Web会議システム構築（第4回 スマホのカメラでWeb会議）">
+    <meta itemprop="description" content="Web会議システム構築（第4回 スマホのカメラでWeb会議） - ないきまさとの部屋のブログ">
+    <meta property="og:title" content="Web会議システム構築（第4回 スマホのカメラでWeb会議）">
+    <meta property="og:description" content="Web会議システム構築（第4回 スマホのカメラでWeb会議） - ないきまさとの部屋のブログ">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://blog.masato-nike.net/post/2020-05-01-web-meeting-4/">
+    <meta property="og:site_name" content="ないきまさとの部屋">
+    <meta property="og:type" content="article">
+
+    
+<link rel="apple-touch-icon" sizes="57x57" href="/ico/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/ico/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/ico/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/ico/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/ico/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/ico/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/ico/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/ico/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/ico/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/ico/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/ico/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/ico/favicon-16x16.png">
+<link rel="manifest" href="/ico/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ico/ms-icon-144x144.png">
+
+
+    <meta name="referrer" content="no-referrer-when-downgrade">
+
+
+    
+    <link href="/post/2020-05-01-web-meeting-4/" rel="alternate" type="application/rss+xml" title="ないきまさとの部屋" />
+    <link href="/post/2020-05-01-web-meeting-4/" rel="feed" type="application/rss+xml" title="ないきまさとの部屋" />
+    
+
+    
+
+    <link rel="stylesheet" href="https://blog.masato-nike.net/theme.css">
+
+    
+
+    
+    
+    
+
+    
+    <link rel="stylesheet" href="https://blog.masato-nike.net/css/custom.css">
+    
+    <link rel="stylesheet" href="https://blog.masato-nike.net/css/syntax.css">
+    
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FLVBZ0FSQH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FLVBZ0FSQH');
+</script>
+
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+        </ul>
+    </div>
+</nav>
+
+
+    
+<header>
+
+    <div class="container">
+        <div class="logo">
+            <a id="siteBaseUrl" href="/" class="logo">
+                
+                <img src="/images/MasatoNike.jpg" alt="">
+                
+
+                <span class="overlay">
+			
+	                <img src="/images/MasatoNikeOff.jpg" alt="">
+		</span>
+            </a>
+        </div>
+        <div class="titles">
+            <h3 class="title">
+		
+		<a href="https://www.masato-nike.net/">ないきまさとの部屋</a> 
+            </h3>
+            
+            <span class="subtitle">ないきまさとの部屋のブログ</span>
+            
+        </div>
+
+        
+</header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://blog.masato-nike.net/post/2020-05-01-web-meeting-4/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://blog.masato-nike.net/post/2020-05-01-web-meeting-4/">
+            Web会議システム構築（第4回 スマホのカメラでWeb会議）
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2020-05-01</span>
+            
+        
+
+        
+
+        
+
+        
+            <span class="author">
+                
+                
+                    <a href="https://blog.masato-nike.net/author/masato-nike/">Masato Nike</a>
+                
+            </span>
+        
+    </div>
+
+    
+        
+
+        <p>2020年5月1日現在、新型コロナウイルスの影響で、テレワークによる作業が多くなっているせいか、Webカメラが品薄状態となっています。<br>
+Webカメラがないのでは、せっかく『Jitsi Meet』でWebシステムを構築したとしても使い物になりません。<br>
+そこで注目したのがスマートフォンに搭載されているカメラをWebカメラの代わりにできないかということです。</p>
+<h2 id="1-ivcam">1. iVCam</h2>
+<p>インストールは簡単なので、とりあえず、リンクだけ貼っておきます。</p>
+<p><a href="https://play.google.com/store/apps/details?id=com.e2esoft.ivcam&amp;hl=ja" title="スマホ（Android）のカメラをWebカメラにするアプリ">スマホ（Android）のカメラをWebカメラにするアプリ</a></p>
+<p><a href="https://apps.apple.com/jp/app/ivcam-%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E3%82%AB%E3%83%A1%E3%83%A9/id1164464478" title="スマホ（iPhone）のカメラをWebカメラにするアプリ">スマホ（iPhone）のカメラをWebカメラにするアプリ</a></p>
+<p><a href="https://www.e2esoft.com/ivcam/" title="スマホのカメラをパソコンで認識させるソフト">スマホのカメラをパソコンで認識させるソフト</a><br>
+これらをインストールしたら、同一ネットワーク（Wi-Fi環境）にてパソコン・スマホの両方でiVCamを実行するか、もしくは、USBケーブルでスマホとパソコンを接続し、実行してください。</p>
+<h1 id="2-仮想サウンドカード">2. 仮想サウンドカード</h1>
+<p>私のパソコン環境では市販のサウンドカードを増設してあるので、マイクはLineInで平気だったのですが、サウンドカードを増設していない人は仮想サウンドカードというのが必要みたいです。<br>
+ここでは無料の仮想サウンドカードとして、『<a href="https://www.vb-audio.com/Cable/index.htm" title="VB-CABLE">VB-CABLE</a>』を紹介します。</p>
+<p>(1) 以下のURLのDownloadをクリックし、VB-CABLE Driverをダウンロードしてください。</p>
+<p><a href="https://www.vb-audio.com/Cable/index.htm" title="https://www.vb-audio.com/Cable/index.htm">https://www.vb-audio.com/Cable/index.htm</a></p>
+<p>(2) ダウンロードしたファイルを解凍し、VBCABLE_Setup_x64.exe（もしくは、VBCABLE_Setup.exe）を右クリックして、[管理者として実行]をクリックしてください。</p>
+<p>(3) [Install]をクリックしてください。</p>
+<p>次に、Windowsのサウンドの設定です。<br>
+(4) [スタートメニュー]－[設定]より、[システム]をクリックしてください。<br>
+<img src="/images/blog/WebMeeting4/WebMeet4_001.JPG" alt="Web会議システム構築">  <br>
+(5) [サウンド]を選択し、出力を&quot;スピーカー&quot;、入力を&quot;CABLE Putput (VB-Audio Virtual Cable)&ldquo;に設定してください。<br>
+<img src="/images/blog/WebMeeting4/WebMeet4_002.JPG" alt="Web会議システム構築"></p>
+<p>以上で設定は終わりです。Jitsi Meetサーバに接続し、相手に音声が伝わることを確認してください。</p>
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://blog.masato-nike.net/tags/iphone/">iPhone</a>
+                    
+                
+                    
+                    
+                    <a href="https://blog.masato-nike.net/tags/android/">Android</a>
+                    
+                
+                    
+                    
+                    <a href="https://blog.masato-nike.net/tags/smartphoneappli/">SmartPhoneAppli</a>
+                    
+                
+                    
+                    
+                    <a href="https://blog.masato-nike.net/tags/webmeeting/">WebMeeting</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        <div id="comments-container">
+            <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bilberry-hugo-theme" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            
+
+            
+
+            
+
+        </div>
+    
+
+    </div>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>最近の投稿</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://blog.masato-nike.net/post/2022-12-08-long-time-no-see/">久しぶりの更新 ～Huge環境構築～</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-3/">Web会議システム構築（第3回 オレオレサーバ証明書の発行～Jitsi Meetの設定）</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-2/">Web会議システム構築（第2回 Linux（CentOS）へのJitsi Meetのインストール）</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-1/">Web会議システム構築（第1回 Linux（CentOS）サーバの構築）</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-intoroduction/">CentOSへのJitsi Meetのインストール（序章 コロナに負けるな！）</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://blog.masato-nike.net/post/2020-05-07-chromeremotedesktop/">Google Chrome Remote Desktop Webのインストール</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://blog.masato-nike.net/post/2020-05-06-windows10-auto-login/">Windows10 で自動ログインさせる方法</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+
+        <div class="right">
+            
+            <div class="external-profiles">
+                <strong>ソーシャルメディア</strong>
+
+                
+                <a href="https://twitter.com/masato_nike" target="_blank" rel=""><em class="fab fa-twitter"></em></a>
+                
+                <a href="https://www.instagram.com/z_masato_nike/" target="_blank" rel=""><em class="fab fa-instagram"></em></a>
+                
+            </div>
+            
+
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://www.masato-nike.net/" target="_blank">
+                &copy;
+                
+                2016-2022
+                
+                by Masato Nike
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://github.com/Lednerb/bilberry-hugo-theme"
+                target="_blank">Bilberry Hugo Theme</a>
+        </div>
+    </div>
+</div>
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-79365305-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    
+
+
+    <script type="text/javascript" src="https://blog.masato-nike.net/theme.js"></script>
+
+    
+    
+    
+
+    
+    <div id="activate-algolia-search" class="hidden">
+  <input type="hidden" id="algolia-search-appId" value="45CEN6X6AT">
+  <input type="hidden" id="algolia-search-apiKey" value="16030625f1a4d0dd3b8aefd794fd4cf1">
+  <input type="hidden" id="algolia-search-indexName" value="bilberry-hugo-theme">
+  <input type="hidden" id="algolia-search-noSearchResults" value="検索結果がありません.">
+
+  
+  <input type="hidden" id="algolia-search-currentLanguageOnly">
+  
+</div>
+
+    
+
+
+</body>
+
+</html>

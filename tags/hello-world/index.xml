@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hello World on ないきまさとの部屋</title>
+    <link>https://blog.masato-nike.net/tags/hello-world/</link>
+    <description>Recent content in Hello World on ないきまさとの部屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 08 Dec 2022 12:00:00 +0900</lastBuildDate><atom:link href="https://blog.masato-nike.net/tags/hello-world/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>久しぶりの更新 ～Huge環境構築～</title>
+      <link>https://blog.masato-nike.net/post/2022-12-08-long-time-no-see/</link>
+      <pubDate>Thu, 08 Dec 2022 12:00:00 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2022-12-08-long-time-no-see/</guid>
+      <description>久しぶりの更新です。
+かれこれ2年ぐらい放置していたみたい。
+なぜ放置してたかというと、メインパソコンをWindows11の高速パソコンに買い替えた際に、Hugoの環境を入れていなかったため、 環境を構築するの『めんどくさいなぁ』と手つかずでした（汗）
+ということで、正常に投稿できるかわからない（涙）
+さすがに2年間も放置していると、記事を投稿するのに必要なソフトもいろいろ違ってくるようです。
+そこで、新たにHugo環境を構築する際に行ったことを3回に分けて書いていきたいと思います。</description>
+    </item>
+    
+    <item>
+      <title>Hello!Hugo</title>
+      <link>https://blog.masato-nike.net/post/2020-05-01-hello/</link>
+      <pubDate>Fri, 01 May 2020 05:46:14 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2020-05-01-hello/</guid>
+      <description>Hello!Hugo</description>
+    </item>
+    
+    <item>
+      <title>久しぶりです!Octopress</title>
+      <link>https://blog.masato-nike.net/post/2017-10-07-hello/</link>
+      <pubDate>Sat, 07 Oct 2017 08:23:00 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2017-10-07-hello/</guid>
+      <description>久しぶりです!Octopress</description>
+    </item>
+    
+    <item>
+      <title>Hello!Octopress</title>
+      <link>https://blog.masato-nike.net/post/2016-06-12-hello/</link>
+      <pubDate>Sun, 12 Jun 2016 06:34:46 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2016-06-12-hello/</guid>
+      <description>Hello!Octopress</description>
+    </item>
+    
+  </channel>
+</rss>

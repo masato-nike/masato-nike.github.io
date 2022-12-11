@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Octopress on ないきまさとの部屋</title>
+    <link>https://blog.masato-nike.net/tags/octopress/</link>
+    <description>Recent content in Octopress on ないきまさとの部屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 07 Oct 2017 08:23:00 +0900</lastBuildDate><atom:link href="https://blog.masato-nike.net/tags/octopress/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>久しぶりです!Octopress</title>
+      <link>https://blog.masato-nike.net/post/2017-10-07-hello/</link>
+      <pubDate>Sat, 07 Oct 2017 08:23:00 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2017-10-07-hello/</guid>
+      <description>久しぶりです!Octopress</description>
+    </item>
+    
+    <item>
+      <title>Octopressで表を挿入する</title>
+      <link>https://blog.masato-nike.net/post/2016-06-16-octopress/</link>
+      <pubDate>Thu, 16 Jun 2016 10:52:50 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2016-06-16-octopress/</guid>
+      <description>&lt;p&gt;昨日の投稿で表を入れようとして、少しはまったので、メモ代わりに書いておきます。&lt;/p&gt;
+&lt;h2 id=&#34;1-表の作り方&#34;&gt;1. 表の作り方&lt;/h2&gt;
+&lt;p&gt;Markdownでの表の作り方は簡単で、以下のようにすれば、それぞれ左寄せ、中央寄せ、右寄せになります。&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+    <item>
+      <title>Octopressを導入してみた</title>
+      <link>https://blog.masato-nike.net/post/2016-06-15-octopress/</link>
+      <pubDate>Wed, 15 Jun 2016 06:00:44 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2016-06-15-octopress/</guid>
+      <description>以下のサイトを参考にさせてもらい、Octopressを導入してみた。
+エンジニアのブログは Octopress が最適 - do blog</description>
+    </item>
+    
+    <item>
+      <title>Hello!Octopress</title>
+      <link>https://blog.masato-nike.net/post/2016-06-12-hello/</link>
+      <pubDate>Sun, 12 Jun 2016 06:34:46 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2016-06-12-hello/</guid>
+      <description>Hello!Octopress</description>
+    </item>
+    
+  </channel>
+</rss>

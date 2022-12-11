@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Facebook on ないきまさとの部屋</title>
+    <link>https://blog.masato-nike.net/tags/facebook/</link>
+    <description>Recent content in Facebook on ないきまさとの部屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 11 Oct 2017 06:35:53 +0900</lastBuildDate><atom:link href="https://blog.masato-nike.net/tags/facebook/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>FacebookのRSSを取得する（永久ページアクセストークンの取得）</title>
+      <link>https://blog.masato-nike.net/post/2017-10-11-facebookfeed/</link>
+      <pubDate>Wed, 11 Oct 2017 06:35:53 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2017-10-11-facebookfeed/</guid>
+      <description>&lt;p&gt;FacebookのRSSを取得し、自分のホームページのTOPICSにしたいなぁと考えた次第です。&lt;br&gt;
+FacebookのRSSを取得するには、ページアクセストークンなるものが必要なのですが、通常の方法だと、有効期限が1時間以内のアクセストークンが取得できません。&lt;br&gt;
+それだといくらRSSを取得できても、ホームページのTOPICSに使用するには有効期限が短すぎます。
+そこで、永久的なアクセストークンを取得できないかと、いろいろぐぐってみたわけです。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

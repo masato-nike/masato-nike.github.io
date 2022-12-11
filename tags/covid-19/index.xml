@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>COVID-19 on ないきまさとの部屋</title>
+    <link>https://blog.masato-nike.net/tags/covid-19/</link>
+    <description>Recent content in COVID-19 on ないきまさとの部屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 09 May 2020 12:08:20 +0900</lastBuildDate><atom:link href="https://blog.masato-nike.net/tags/covid-19/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CentOSへのJitsi Meetのインストール（序章 コロナに負けるな！）</title>
+      <link>https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-intoroduction/</link>
+      <pubDate>Sat, 09 May 2020 12:08:20 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-intoroduction/</guid>
+      <description>&lt;p&gt;UbuntuへのオープンソースのWeb会議システム『Jitsi Meet』のインストールを紹介してきましたが、CentOSでできないものかと調べてみたので書いておく。&lt;br&gt;
+CentOSへの『Jitsi Meet』の対応はRPMが2017年2月7日以降更新されていない状況です(2020年5月9日現在)。&lt;br&gt;
+なので、セキュリティとかバグとかもろもろの観点から、CentOSへの『Jitsi Meet』のインストールはあまりお勧めできません&lt;br&gt;
+それでも、もろもろの事情でCentOSを利用しなきゃならないこともあると思うので、3回に分けて記述していきたいと思います。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Web会議システム構築（序章 コロナに負けるな！）</title>
+      <link>https://blog.masato-nike.net/post/2020-05-01-web-meeting-introduction/</link>
+      <pubDate>Fri, 01 May 2020 15:50:57 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2020-05-01-web-meeting-introduction/</guid>
+      <description>&lt;p&gt;新型コロナウイルスの感染が拡大し、緊急事態宣言が出される中、Web会議の需要が出てきていると思います。&lt;br&gt;
+インターネットを介したWeb会議では『Zoom』が主流になってきているのでしょうか、よく耳にします。&lt;/p&gt;
+&lt;p&gt;今回は「イントラネットの中だけで完結させたい」という要望があったので、そうした際のWeb会議システムの構築について、3回に分けて記述していきたいと思います。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

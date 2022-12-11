@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Masato Nike on ないきまさとの部屋</title>
+    <link>https://blog.masato-nike.net/author/masato-nike/</link>
+    <description>Recent content in Masato Nike on ないきまさとの部屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 08 Dec 2022 12:00:00 +0900</lastBuildDate><atom:link href="https://blog.masato-nike.net/author/masato-nike/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>久しぶりの更新 ～Huge環境構築～</title>
+      <link>https://blog.masato-nike.net/post/2022-12-08-long-time-no-see/</link>
+      <pubDate>Thu, 08 Dec 2022 12:00:00 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2022-12-08-long-time-no-see/</guid>
+      <description>久しぶりの更新です。
+かれこれ2年ぐらい放置していたみたい。
+なぜ放置してたかというと、メインパソコンをWindows11の高速パソコンに買い替えた際に、Hugoの環境を入れていなかったため、 環境を構築するの『めんどくさいなぁ』と手つかずでした（汗）
+ということで、正常に投稿できるかわからない（涙）
+さすがに2年間も放置していると、記事を投稿するのに必要なソフトもいろいろ違ってくるようです。
+そこで、新たにHugo環境を構築する際に行ったことを3回に分けて書いていきたいと思います。</description>
+    </item>
+    
+    <item>
+      <title>Web会議システム構築（第3回 オレオレサーバ証明書の発行～Jitsi Meetの設定）</title>
+      <link>https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-3/</link>
+      <pubDate>Sat, 09 May 2020 17:50:32 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-3/</guid>
+      <description>&lt;p&gt;本稿の前提条件として、以下が実施させているものとします。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-1/&#34; title=&#34;第1回 Linux（CentOS）サーバの構築&#34;&gt;第1回 Linux（CentOS）サーバの構築&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-2/&#34; title=&#34;第2回 Linux（CentOS）へのJitsi Meetのインストール&#34;&gt;第2回 Linux（CentOS）へのJitsi Meetのインストール&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Web会議システム『Jitsi Meet』を動作させるためには、SSLサーバ証明書が必要です。&lt;br&gt;
+インターネット内のサーバであれば、『&lt;a href=&#34;https://letsencrypt.org/ja/&#34; title=&#34;Let&#39;s Encrypt&#34;&gt;Let&amp;rsquo;s Encrypt&lt;/a&gt;』といった無料のSSLサーバ証明書が使えるのですが、今回はイントラネット内で利用するということが前提ですので、『Let&amp;rsquo;s Encrypt』は使えません。&lt;br&gt;
+そこで、OpenSSLを使ったオレオレサーバ証明書が必要になります。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Web会議システム構築（第2回 Linux（CentOS）へのJitsi Meetのインストール）</title>
+      <link>https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-2/</link>
+      <pubDate>Sat, 09 May 2020 16:57:56 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-2/</guid>
+      <description>&lt;p&gt;Linux(CentOS)にWeb会議システム『Jitsi Meet』をインストールします。&lt;br&gt;
+前提として、以下を実施しているものとします。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-1/&#34; title=&#34;第1回 Linux（CentOS）サーバの構築&#34;&gt;第1回 Linux（CentOS）サーバの構築&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Web会議システム構築（第1回 Linux（CentOS）サーバの構築）</title>
+      <link>https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-1/</link>
+      <pubDate>Sat, 09 May 2020 12:47:20 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-1/</guid>
+      <description>&lt;p&gt;以下のソフトウェアをWindows10にインストールしました（2020年4月30日現在最新？）&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;ソフトウェア&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;バージョン&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;入手先&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;VirtualBox&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;6.1.6-137129&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;a href=&#34;https://www.virtualbox.org/wiki/Downloads&#34; title=&#34;Downloads – Oracle VM VirtualBox&#34;&gt;Downloads – Oracle VM VirtualBox&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;CentOS&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;8.1.1911&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;a href=&#34;https://www.centos.org/download/&#34; title=&#34;Download CentOS&#34;&gt;Download CentOS&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;それぞれ自分の環境にあったものをダウンロードしてください。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>CentOSへのJitsi Meetのインストール（序章 コロナに負けるな！）</title>
+      <link>https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-intoroduction/</link>
+      <pubDate>Sat, 09 May 2020 12:08:20 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-intoroduction/</guid>
+      <description>&lt;p&gt;UbuntuへのオープンソースのWeb会議システム『Jitsi Meet』のインストールを紹介してきましたが、CentOSでできないものかと調べてみたので書いておく。&lt;br&gt;
+CentOSへの『Jitsi Meet』の対応はRPMが2017年2月7日以降更新されていない状況です(2020年5月9日現在)。&lt;br&gt;
+なので、セキュリティとかバグとかもろもろの観点から、CentOSへの『Jitsi Meet』のインストールはあまりお勧めできません&lt;br&gt;
+それでも、もろもろの事情でCentOSを利用しなきゃならないこともあると思うので、3回に分けて記述していきたいと思います。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Google Chrome Remote Desktop Webのインストール</title>
+      <link>https://blog.masato-nike.net/post/2020-05-07-chromeremotedesktop/</link>
+      <pubDate>Thu, 07 May 2020 08:35:59 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2020-05-07-chromeremotedesktop/</guid>
+      <description>&lt;p&gt;新型コロナウイルスの影響で、自宅から会社や友人宅のパソコンを操作したいなという機会が増えたので、Google Chromeの拡張機能であるリモートデスクトップのインストール方法を覚書代わりに書いておきます。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Windows10 で自動ログインさせる方法</title>
+      <link>https://blog.masato-nike.net/post/2020-05-06-windows10-auto-login/</link>
+      <pubDate>Wed, 06 May 2020 17:30:01 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2020-05-06-windows10-auto-login/</guid>
+      <description>Windows10で自動ログインさせるためのコマンドを備忘録替わりに書いておきます。
+netplwiz </description>
+    </item>
+    
+    <item>
+      <title>Web会議システム構築（第4回 スマホのカメラでWeb会議）</title>
+      <link>https://blog.masato-nike.net/post/2020-05-01-web-meeting-4/</link>
+      <pubDate>Fri, 01 May 2020 19:11:24 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2020-05-01-web-meeting-4/</guid>
+      <description>&lt;p&gt;2020年5月1日現在、新型コロナウイルスの影響で、テレワークによる作業が多くなっているせいか、Webカメラが品薄状態となっています。&lt;br&gt;
+Webカメラがないのでは、せっかく『Jitsi Meet』でWebシステムを構築したとしても使い物になりません。&lt;br&gt;
+そこで注目したのがスマートフォンに搭載されているカメラをWebカメラの代わりにできないかということです。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Web会議システム構築（第3回 オレオレサーバ証明書の発行～クライアントへの証明書のインストール）</title>
+      <link>https://blog.masato-nike.net/post/2020-05-01-web-meeting-3/</link>
+      <pubDate>Fri, 01 May 2020 19:07:06 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2020-05-01-web-meeting-3/</guid>
+      <description>&lt;p&gt;本稿の前提条件として、以下が実施させているものとします。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.masato-nike.net/post/2020-05-01-web-meeting-1/&#34; title=&#34;第1回 Linux（Ubuntu）サーバの構築&#34;&gt;第1回 Linux（Ubuntu）サーバの構築&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.masato-nike.net/post/2020-05-01-web-meeting-2/&#34; title=&#34;第2回 Linux（Ubuntu）へのJitsi Meetのインストール&#34;&gt;第2回 Linux（Ubuntu）へのJitsi Meetのインストール&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Web会議システム『Jitsi Meet』を動作させるためには、SSLサーバ証明書が必要です。&lt;br&gt;
+インターネット内のサーバであれば、『&lt;a href=&#34;https://letsencrypt.org/ja/&#34; title=&#34;Let&#39;s Encrypt&#34;&gt;Let&amp;rsquo;s Encrypt&lt;/a&gt;』といった無料のSSLサーバ証明書が使えるのですが、今回はイントラネット内で利用するということが前提ですので、『Let&amp;rsquo;s Encrypt』は使えません。&lt;br&gt;
+そこで、OpenSSLを使ったオレオレサーバ証明書が必要になります。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Web会議システム構築（第2回 Linux（Ubuntu）へのJitsi Meetのインストール）</title>
+      <link>https://blog.masato-nike.net/post/2020-05-01-web-meeting-2/</link>
+      <pubDate>Fri, 01 May 2020 19:04:09 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2020-05-01-web-meeting-2/</guid>
+      <description>&lt;p&gt;Linux(Ubuntu)にWeb会議システム『Jitsi Meet』をインストールします。&lt;br&gt;
+前提として、以下を実施しているものとします。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;http://blog.masato-nike.net/post/2020-05-01-web-meeting-1/&#34; title=&#34;第1回 Linux（Ubuntu）サーバの構築&#34;&gt;第1回 Linux（Ubuntu）サーバの構築&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Web会議システム構築（第1回 Linux（Ubuntu）サーバの構築）</title>
+      <link>https://blog.masato-nike.net/post/2020-05-01-web-meeting-1/</link>
+      <pubDate>Fri, 01 May 2020 16:27:29 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2020-05-01-web-meeting-1/</guid>
+      <description>&lt;p&gt;Web会議システムをイントラネット内に構築する方法として、仮想Linuxサーバを構築し、そこに『Jitsi Meet』をインストールする方法が考えられます。&lt;/p&gt;
+&lt;p&gt;以下のソフトウェアをWindows10にインストールしました（2020年4月30日現在最新？）&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:left&#34;&gt;ソフトウェア&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;バージョン&lt;/th&gt;
+&lt;th style=&#34;text-align:right&#34;&gt;入手先&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;VirtualBox&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;6.1.6-137129&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;a href=&#34;https://www.virtualbox.org/wiki/Downloads&#34; title=&#34;Downloads – Oracle VM VirtualBox&#34;&gt;Downloads – Oracle VM VirtualBox&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:left&#34;&gt;Ubuntu&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;20.04&lt;/td&gt;
+&lt;td style=&#34;text-align:right&#34;&gt;&lt;a href=&#34;https://jp.ubuntu.com/download&#34; title=&#34;Ubuntuを入手する&#34;&gt;Ubuntuを入手する&lt;/a&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;それぞれ自分の環境にあったものをダウンロードしてください。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Web会議システム構築（序章 コロナに負けるな！）</title>
+      <link>https://blog.masato-nike.net/post/2020-05-01-web-meeting-introduction/</link>
+      <pubDate>Fri, 01 May 2020 15:50:57 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2020-05-01-web-meeting-introduction/</guid>
+      <description>&lt;p&gt;新型コロナウイルスの感染が拡大し、緊急事態宣言が出される中、Web会議の需要が出てきていると思います。&lt;br&gt;
+インターネットを介したWeb会議では『Zoom』が主流になってきているのでしょうか、よく耳にします。&lt;/p&gt;
+&lt;p&gt;今回は「イントラネットの中だけで完結させたい」という要望があったので、そうした際のWeb会議システムの構築について、3回に分けて記述していきたいと思います。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hello!Hugo</title>
+      <link>https://blog.masato-nike.net/post/2020-05-01-hello/</link>
+      <pubDate>Fri, 01 May 2020 05:46:14 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2020-05-01-hello/</guid>
+      <description>Hello!Hugo</description>
+    </item>
+    
+    <item>
+      <title>Instagramにパソコンから画像をアップする方法（Firefox篇）</title>
+      <link>https://blog.masato-nike.net/post/2017-10-29-instagram-pc/</link>
+      <pubDate>Sun, 29 Oct 2017 16:25:20 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2017-10-29-instagram-pc/</guid>
+      <description>&lt;p&gt;Instagramにパソコンから画像をアップしたいと思ったことはありませんか？&lt;br&gt;
+Instagramでは通常はパソコンかあらはアップできないのですが、ブラウザを偽装（？）することにより、パソコンから画像をアップすることができるようになります。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>FacebookのRSSを取得する（永久ページアクセストークンの取得）</title>
+      <link>https://blog.masato-nike.net/post/2017-10-11-facebookfeed/</link>
+      <pubDate>Wed, 11 Oct 2017 06:35:53 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2017-10-11-facebookfeed/</guid>
+      <description>&lt;p&gt;FacebookのRSSを取得し、自分のホームページのTOPICSにしたいなぁと考えた次第です。&lt;br&gt;
+FacebookのRSSを取得するには、ページアクセストークンなるものが必要なのですが、通常の方法だと、有効期限が1時間以内のアクセストークンが取得できません。&lt;br&gt;
+それだといくらRSSを取得できても、ホームページのTOPICSに使用するには有効期限が短すぎます。
+そこで、永久的なアクセストークンを取得できないかと、いろいろぐぐってみたわけです。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Fyuseというアプリ</title>
+      <link>https://blog.masato-nike.net/post/2017-10-07-fyuse/</link>
+      <pubDate>Sat, 07 Oct 2017 15:31:13 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2017-10-07-fyuse/</guid>
+      <description>&lt;p&gt;仕事で、ホームページ上で商品紹介をするにあたって、商品の全体画像が欲しくて、いい感じに撮影できないか、あれこれググっていたら、『Fyuse』なるアプリを発見した！&lt;br&gt;
+なにはともあれ、『Fyuse』で撮影した写真を、マウスを動かしながら見てほしい。&lt;/p&gt;
+&lt;div id=&#34;fyu_3e9camgo2k&#34; class=&#34;fyu_container fyu_vertical&#34; style=&#34;margin:auto&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;script src=&#34;https://fyu.se/embed?v=3.0&#34;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+
+FYU.add(&#34;3e9camgo2k&#34;, &#34;fyu_3e9camgo2k&#34;);
+
+&lt;/script&gt;
+
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>久しぶりです!Octopress</title>
+      <link>https://blog.masato-nike.net/post/2017-10-07-hello/</link>
+      <pubDate>Sat, 07 Oct 2017 08:23:00 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2017-10-07-hello/</guid>
+      <description>久しぶりです!Octopress</description>
+    </item>
+    
+    <item>
+      <title>さくらインターネットでサーバ構築②</title>
+      <link>https://blog.masato-nike.net/post/2016-06-21-buildserverdns/</link>
+      <pubDate>Tue, 21 Jun 2016 05:38:10 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2016-06-21-buildserverdns/</guid>
+      <description>&lt;p&gt;今回はDNSサーバの構築について書こうと思いますが、
+タイトルには『さくらインターネット』と書いていますが、
+今回、さくらインターネットでドメインを取得しなかったため、
+さくらインターネットはあまり関係ないです。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Octopressで表を挿入する</title>
+      <link>https://blog.masato-nike.net/post/2016-06-16-octopress/</link>
+      <pubDate>Thu, 16 Jun 2016 10:52:50 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2016-06-16-octopress/</guid>
+      <description>&lt;p&gt;昨日の投稿で表を入れようとして、少しはまったので、メモ代わりに書いておきます。&lt;/p&gt;
+&lt;h2 id=&#34;1-表の作り方&#34;&gt;1. 表の作り方&lt;/h2&gt;
+&lt;p&gt;Markdownでの表の作り方は簡単で、以下のようにすれば、それぞれ左寄せ、中央寄せ、右寄せになります。&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;</description>
+    </item>
+    
+    <item>
+      <title>さくらインターネットでサーバ構築①</title>
+      <link>https://blog.masato-nike.net/post/2016-06-15-buildserver/</link>
+      <pubDate>Wed, 15 Jun 2016 15:46:36 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2016-06-15-buildserver/</guid>
+      <description>&lt;p&gt;ひとこと、ふたことつぶやいていたけど、そろそろブログらしいことを書こうと思う。&lt;br&gt;
+いままではブログだのホームページだのは&lt;a href=&#34;http://geocities.yahoo.co.jp/&#34; title=&#34;Yahoo!ジオシティーズ&#34;&gt;Yahoo!ジオシティーズ&lt;/a&gt;や&lt;a href=&#34;http://www.ameba.jp/&#34; title=&#34;アメブロ&#34;&gt;アメブロ&lt;/a&gt;を使用していたのだが、Ruby on Railsとかのページを作ってみたいし、どうせならブログもコードとかをきちんと書けるものが欲しいな。と思っていたので、今回はじめてレンタルサーバ(VPS)というものを借りることにした。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Octopressを導入してみた</title>
+      <link>https://blog.masato-nike.net/post/2016-06-15-octopress/</link>
+      <pubDate>Wed, 15 Jun 2016 06:00:44 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2016-06-15-octopress/</guid>
+      <description>以下のサイトを参考にさせてもらい、Octopressを導入してみた。
+エンジニアのブログは Octopress が最適 - do blog</description>
+    </item>
+    
+    <item>
+      <title>Hello!Octopress</title>
+      <link>https://blog.masato-nike.net/post/2016-06-12-hello/</link>
+      <pubDate>Sun, 12 Jun 2016 06:34:46 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2016-06-12-hello/</guid>
+      <description>Hello!Octopress</description>
+    </item>
+    
+  </channel>
+</rss>

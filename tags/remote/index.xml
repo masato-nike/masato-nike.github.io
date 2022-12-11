@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Remote on ないきまさとの部屋</title>
+    <link>https://blog.masato-nike.net/tags/remote/</link>
+    <description>Recent content in Remote on ないきまさとの部屋</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 07 May 2020 08:35:59 +0900</lastBuildDate><atom:link href="https://blog.masato-nike.net/tags/remote/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Google Chrome Remote Desktop Webのインストール</title>
+      <link>https://blog.masato-nike.net/post/2020-05-07-chromeremotedesktop/</link>
+      <pubDate>Thu, 07 May 2020 08:35:59 +0900</pubDate>
+      
+      <guid>https://blog.masato-nike.net/post/2020-05-07-chromeremotedesktop/</guid>
+      <description>&lt;p&gt;新型コロナウイルスの影響で、自宅から会社や友人宅のパソコンを操作したいなという機会が増えたので、Google Chromeの拡張機能であるリモートデスクトップのインストール方法を覚書代わりに書いておきます。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
