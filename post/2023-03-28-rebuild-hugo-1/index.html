@@ -1,0 +1,393 @@
+<!doctype html>
+<html class="no-js" lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Masato Nike">
+    <meta name="description" content="ないきまさとの部屋のブログ">
+    <meta name="keywords" content="blog, ブログ, Octopress, Hugo, サーバ構築">
+    <meta name="generator" content="Hugo 0.108.0">
+    <title> 第1回 Hugo環境再構築 ～前提からデモサイト表示まで～ | ないきまさとの部屋</title>
+    <meta name="description" content="第1回 Hugo環境再構築 ～前提からデモサイト表示まで～ - ないきまさとの部屋のブログ">
+    <meta itemprop="name" content="第1回 Hugo環境再構築 ～前提からデモサイト表示まで～">
+    <meta itemprop="description" content="第1回 Hugo環境再構築 ～前提からデモサイト表示まで～ - ないきまさとの部屋のブログ">
+    <meta property="og:title" content="第1回 Hugo環境再構築 ～前提からデモサイト表示まで～">
+    <meta property="og:description" content="第1回 Hugo環境再構築 ～前提からデモサイト表示まで～ - ないきまさとの部屋のブログ">
+    <meta property="og:image" content="https://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?size=200">
+    <meta property="og:url" content="https://blog.masato-nike.net/post/2023-03-28-rebuild-hugo-1/">
+    <meta property="og:site_name" content="ないきまさとの部屋">
+    <meta property="og:type" content="article">
+
+    
+<link rel="apple-touch-icon" sizes="57x57" href="/ico/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/ico/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/ico/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/ico/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/ico/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/ico/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/ico/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/ico/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/ico/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/ico/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/ico/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/ico/favicon-16x16.png">
+<link rel="manifest" href="/ico/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ico/ms-icon-144x144.png">
+
+
+    <meta name="referrer" content="no-referrer-when-downgrade">
+
+
+    
+    <link href="/post/2023-03-28-rebuild-hugo-1/" rel="alternate" type="application/rss+xml" title="ないきまさとの部屋" />
+    <link href="/post/2023-03-28-rebuild-hugo-1/" rel="feed" type="application/rss+xml" title="ないきまさとの部屋" />
+    
+
+    
+
+    <link rel="stylesheet" href="https://blog.masato-nike.net/theme.css">
+
+    
+
+    
+    
+    
+
+    
+    <link rel="stylesheet" href="https://blog.masato-nike.net/css/custom.css">
+    
+    <link rel="stylesheet" href="https://blog.masato-nike.net/css/syntax.css">
+    
+
+<script src="https://kit.fontawesome.com/f10f31eb1e.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="bilberry-hugo-theme">
+
+    
+    <nav>
+
+    <div class="container">
+        <ul class="topnav">
+            
+        </ul>
+    </div>
+</nav>
+
+
+    
+<header>
+
+    <div class="container">
+        <div class="logo">
+            <a id="siteBaseUrl" href="/" class="logo">
+                
+                <img src="/images/MasatoNike.jpg" alt="">
+                
+
+                <span class="overlay">
+			
+	                <img src="/images/MasatoNikeOff.jpg" alt="">
+		</span>
+            </a>
+        </div>
+        <div class="titles">
+            <h3 class="title">
+		
+		<a href="https://www.masato-nike.net/">ないきまさとの部屋</a> 
+            </h3>
+            
+            <span class="subtitle">ないきまさとの部屋のブログ</span>
+            
+        </div>
+
+        
+</header>
+
+
+    <div class="main container">
+        
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="https://blog.masato-nike.net/post/2023-03-28-rebuild-hugo-1/">
+    <i class="fas fa-fw fa-pencil-alt"></i>
+</a>
+
+<article class="default article">
+    
+
+    <div class="content">
+    <h1 class="article-title">
+        <a href="https://blog.masato-nike.net/post/2023-03-28-rebuild-hugo-1/">
+            第1回 Hugo環境再構築 ～前提からデモサイト表示まで～
+        </a>
+    </h1>
+
+    <div class="meta">
+        
+            
+                <span class="date moment">2023-03-28</span>
+            
+        
+
+        
+
+        
+
+        
+            <span class="author">
+                
+                
+                    <a href="https://blog.masato-nike.net/author/masato-nike/">Masato Nike</a>
+                
+            </span>
+        
+    </div>
+
+    
+        
+
+        <p>前回の投稿から随分と経過してしまいました…</p>
+<p>Hugo環境再構築の第1回になります。<br>
+以下もあわせてお読みいただけると幸いです。</p>
+<p><a href="/post/2023-03-28-rebuild-hugo-1//" title="第1回 Hugo環境再構築 ～前提からデモサイト表示まで～">第1回 Hugo環境再構築 ～前提からデモサイト表示まで～</a><br>
+<a href="/post/2023-03-28-rebuild-hugo-2/" title="第2回 Hugo環境再構築 ～既存ソース取得からHugo基本設定まで～">第2回 Hugo環境再構築 ～既存ソース取得からHugo基本設定まで～</a><br>
+<a href="/post/2023-03-28-rebuild-hugo-3/" title="第3回 Hugo環境再構築 ～一番ハマったHugoのSyntaxHighlight～">第3回 Hugo環境再構築 ～一番ハマったHugoのSyntaxHighlight～</a></p>
+<h2 id="0-2022年12月8日時点の最新のバージョン">0. 2022年12月8日時点の最新のバージョン</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">ソフトウェア</th>
+<th style="text-align:center">バージョン</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Go</td>
+<td style="text-align:center">go1.19.4</td>
+</tr>
+<tr>
+<td style="text-align:left">Hugo</td>
+<td style="text-align:center">v0.108.0</td>
+</tr>
+<tr>
+<td style="text-align:left">bilberry-hugo-theme</td>
+<td style="text-align:center">2.0.0</td>
+</tr>
+</tbody>
+</table>
+<h2 id="1-プログラミング言語goのインストール">1. プログラミング言語『Go』のインストール</h2>
+<p>以下のサイトより、最新の『Go』をインストール。<br>
+<a href="https://go.dev/dl/" title="プログラミング言語『Go』">Downloads - The Go Programming Languag</a></p>
+<h2 id="2-静的webサイト作成フレームワークhugoのインストール">2. 静的Webサイト作成フレームワーク『Hugo』のインストール</h2>
+<p>Hugo(ヒューゴ）とは、Go言語で書かれた静的 HTML &amp; CSS のWebを作成するフレームワークです。<br>
+(1) コマンドプロンプト起動し、以下のコマンドを実行すればインストールできます。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">go install github.com/gohugoio/hugo@latest
+</span></span></code></pre></div><p>(2) これでHugoがインストールできなので、以下のコマンドで新しいサイト（例 NewSiteName）を作成します。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hugo new site NewSiteName
+</span></span></code></pre></div><p>(3) 以下のサイトからHugo Themeをダウンロードしてきます。<br>
+<a href="https://themes.gohugo.io/" title="Hugo Themeダウンロードサイト">Complete List | Hugo Themes</a><br>
+※私はいままで使用していたテーマ『bilberry-hugo-theme』を以下のコマンドで、GitHubよりダウンロード（clone）しました。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">git clone https://github.com/Lednerb/bilberry-hugo-theme.git
+</span></span></code></pre></div><p>(4) 作成したNewSiteNameフォルダ配下の以下のファイルを削除してください。</p>
+<p>NewSiteName\archetypes\default.md</p>
+<p>以下のファイルをNewSiteNameフォルダ配下に上書きコピーします。</p>
+<p>bilberry-hugo-theme\exampleSite\*</p>
+<p>(6) コマンドプロンプトでNewSiteNameに移動してください。</p>
+<p>(7) このテーマだけなのか不明ですが、Hugoモジュールの追加インストールが必要でしたので、以下のコマンドを実施しました。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">hugo mod init github.com/&lt;your-user&gt;/NewSiteName
+</span></span></code></pre></div><p>(8) Hugo Serverが起動するか、以下のコマンドを実施し確認します。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-Shell" data-lang="Shell"><span class="line"><span class="cl">hugo server -t bilberry-hugo-theme -D -w
+</span></span></code></pre></div><p>(9) Hugo Serverが正常に起動すれば、以下のサイトにアクセスすればデモサイト（？）が見れるはずです。</p>
+<p><a href="http://localhost:1313/" title="デモサイト">Hello World! This is the most epic subtitle ever. | My cool new Blog</a></p>
+    
+</div>
+
+    
+<div class="footer">
+
+
+    
+        <div class="tags">
+            <i class="fa fa-tags"></i>
+            <div class="links">
+                
+                    
+                    
+                    <a href="https://blog.masato-nike.net/tags/hugo/">Hugo</a>
+                    
+                
+            </div>
+        </div>
+    
+
+    
+</div>
+
+</article>
+
+        
+    </div>
+
+    
+        <div id="comments-container">
+            <div id="disqus_thread"></div>
+<script type="application/javascript">
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bilberry-hugo-theme" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            
+
+            
+
+            
+
+        </div>
+    
+
+    </div>
+
+    
+<footer>
+    <div class="container">
+
+        
+        <div class="recent-posts">
+            <strong>最近の投稿</strong>
+            <ul>
+                
+                
+                    <li>
+                        <a href="https://blog.masato-nike.net/post/2023-03-28-rebuild-hugo-3/">第3回 Hugo環境再構築 ～一番ハマったHugoのSyntaxHighlight～</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://blog.masato-nike.net/post/2023-03-28-rebuild-hugo-2/">第2回 Hugo環境再構築 ～既存ソース取得からHugo基本設定まで～</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://blog.masato-nike.net/post/2023-03-28-rebuild-hugo-1/">第1回 Hugo環境再構築 ～前提からデモサイト表示まで～</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://blog.masato-nike.net/post/2022-12-08-long-time-no-see/">久しぶりの更新 ～Huge環境構築～</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-3/">Web会議システム構築（第3回 オレオレサーバ証明書の発行～Jitsi Meetの設定）</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-2/">Web会議システム構築（第2回 Linux（CentOS）へのJitsi Meetのインストール）</a>
+                    </li>
+                
+                    <li>
+                        <a href="https://blog.masato-nike.net/post/2020-05-09-jitsimeet-on-centos-1/">Web会議システム構築（第1回 Linux（CentOS）サーバの構築）</a>
+                    </li>
+                
+            </ul>
+        </div>
+        
+
+        
+
+        <div class="right">
+            
+            <div class="external-profiles">
+                <strong>ソーシャルメディア</strong>
+
+                
+                <a href="https://twitter.com/masato_nike" target="_blank" rel=""><em class="fab fa-twitter"></em></a>
+                
+                <a href="https://www.instagram.com/z_masato_nike/" target="_blank" rel=""><em class="fab fa-instagram"></em></a>
+                
+            </div>
+            
+
+            
+
+            
+        </div>
+    </div>
+</footer>
+
+
+<div class="credits">
+    <div class="container">
+        <div class="copyright">
+            <a href="https://www.masato-nike.net/" target="_blank">
+                &copy;
+                
+                2016-2023
+                
+                by Masato Nike
+            </a>
+            
+        </div>
+        <div class="author">
+            <a href="https://github.com/Lednerb/bilberry-hugo-theme"
+                target="_blank">Bilberry Hugo Theme</a>
+        </div>
+    </div>
+</div>
+
+
+    
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-6S8C4VEW55', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+    
+
+
+    <script type="text/javascript" src="https://blog.masato-nike.net/theme.js"></script>
+
+    
+    
+    
+
+    
+    <div id="activate-algolia-search" class="hidden">
+  <input type="hidden" id="algolia-search-appId" value="45CEN6X6AT">
+  <input type="hidden" id="algolia-search-apiKey" value="16030625f1a4d0dd3b8aefd794fd4cf1">
+  <input type="hidden" id="algolia-search-indexName" value="bilberry-hugo-theme">
+  <input type="hidden" id="algolia-search-noSearchResults" value="検索結果がありません.">
+
+  
+  <input type="hidden" id="algolia-search-currentLanguageOnly">
+  
+</div>
+
+    
+
+
+</body>
+
+</html>
